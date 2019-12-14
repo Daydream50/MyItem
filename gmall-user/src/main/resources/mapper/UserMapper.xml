@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yuan.gmall.user.mapper.UserMapper">
+    <select id="selectAllUser" resultType="com.yuan.gmall.user.bean.UmsMember">
+        select * from ums_member;
+    </select>
+
+    <update id="updateById" parameterType="com.yuan.gmall.user.bean.UmsMember">
+        update ums_member
+        <set>
+            <if test="username != null">
+               username = #{username} where id = #{id}
+            </if>
+        </set>
+    </update>
+
+    <insert id="insertUser" parameterType="com.yuan.gmall.user.bean.UmsMember">
+       insert into ums_member(username,city) values (#{username},#{city})
+    </insert>
+
+</mapper>
