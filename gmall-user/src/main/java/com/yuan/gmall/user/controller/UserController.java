@@ -1,14 +1,12 @@
 package com.yuan.gmall.user.controller;
 
-import com.yuan.gmall.user.bean.UmsMember;
-import com.yuan.gmall.user.bean.UmsMemberReceiveAddress;
-import com.yuan.gmall.user.service.UserService;
+import com.yuan.gmall.bean.UmsMember;
+import com.yuan.gmall.bean.UmsMemberReceiveAddress;
+import com.yuan.gmall.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-
 
 import java.util.List;
 
@@ -17,7 +15,6 @@ public class UserController {
 
     @Autowired
     public UserService userService;
-
 
     @RequestMapping(path = "index")
     @ResponseBody
@@ -43,7 +40,6 @@ public class UserController {
         userService.deleteUserById(id);
     }
 
-
     /*更新用户*/
     @RequestMapping(path = "updateUser")
     @ResponseBody
@@ -67,7 +63,7 @@ public class UserController {
     @ResponseBody
     public List<UmsMemberReceiveAddress> getUserById(String memberId) {
         System.out.println("getUserById方法运行了");
-        System.out.println("控制器ID   "+memberId);
+        System.out.println("控制器ID   " + memberId);
         List<UmsMemberReceiveAddress> receiveAddressByMemberId = userService.getReceiveAddressByMemberId(memberId);
         return receiveAddressByMemberId;
     }

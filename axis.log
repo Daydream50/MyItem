@@ -1,0 +1,610 @@
+2020-01-06 15:12:31,761 0      [           main] INFO  bo.common.logger.LoggerFactory  - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2020-01-06 15:12:34,656 2895   [           main] DEBUG mmon.extension.ExtensionLoader  -  [DUBBO] package com.alibaba.dubbo.rpc;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class Protocol$Adaptive implements com.alibaba.dubbo.rpc.Protocol {
+public void destroy() {throw new UnsupportedOperationException("method public abstract void com.alibaba.dubbo.rpc.Protocol.destroy() of interface com.alibaba.dubbo.rpc.Protocol is not adaptive method!");
+}
+public int getDefaultPort() {throw new UnsupportedOperationException("method public abstract int com.alibaba.dubbo.rpc.Protocol.getDefaultPort() of interface com.alibaba.dubbo.rpc.Protocol is not adaptive method!");
+}
+public com.alibaba.dubbo.rpc.Invoker refer(java.lang.Class arg0, com.alibaba.dubbo.common.URL arg1) throws com.alibaba.dubbo.rpc.RpcException {
+if (arg1 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg1;
+String extName = ( url.getProtocol() == null ? "dubbo" : url.getProtocol() );
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.rpc.Protocol) name from url(" + url.toString() + ") use keys([protocol])");
+com.alibaba.dubbo.rpc.Protocol extension = (com.alibaba.dubbo.rpc.Protocol)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.Protocol.class).getExtension(extName);
+return extension.refer(arg0, arg1);
+}
+public com.alibaba.dubbo.rpc.Exporter export(com.alibaba.dubbo.rpc.Invoker arg0) throws com.alibaba.dubbo.rpc.RpcException {
+if (arg0 == null) throw new IllegalArgumentException("com.alibaba.dubbo.rpc.Invoker argument == null");
+if (arg0.getUrl() == null) throw new IllegalArgumentException("com.alibaba.dubbo.rpc.Invoker argument getUrl() == null");com.alibaba.dubbo.common.URL url = arg0.getUrl();
+String extName = ( url.getProtocol() == null ? "dubbo" : url.getProtocol() );
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.rpc.Protocol) name from url(" + url.toString() + ") use keys([protocol])");
+com.alibaba.dubbo.rpc.Protocol extension = (com.alibaba.dubbo.rpc.Protocol)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.Protocol.class).getExtension(extName);
+return extension.export(arg0);
+}
+}, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:12:34,741 2980   [           main] DEBUG mmon.extension.ExtensionLoader  -  [DUBBO] package com.alibaba.dubbo.rpc;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class ProxyFactory$Adaptive implements com.alibaba.dubbo.rpc.ProxyFactory {
+public com.alibaba.dubbo.rpc.Invoker getInvoker(java.lang.Object arg0, java.lang.Class arg1, com.alibaba.dubbo.common.URL arg2) throws com.alibaba.dubbo.rpc.RpcException {
+if (arg2 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg2;
+String extName = url.getParameter("proxy", "javassist");
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.rpc.ProxyFactory) name from url(" + url.toString() + ") use keys([proxy])");
+com.alibaba.dubbo.rpc.ProxyFactory extension = (com.alibaba.dubbo.rpc.ProxyFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.ProxyFactory.class).getExtension(extName);
+return extension.getInvoker(arg0, arg1, arg2);
+}
+public java.lang.Object getProxy(com.alibaba.dubbo.rpc.Invoker arg0) throws com.alibaba.dubbo.rpc.RpcException {
+if (arg0 == null) throw new IllegalArgumentException("com.alibaba.dubbo.rpc.Invoker argument == null");
+if (arg0.getUrl() == null) throw new IllegalArgumentException("com.alibaba.dubbo.rpc.Invoker argument getUrl() == null");com.alibaba.dubbo.common.URL url = arg0.getUrl();
+String extName = url.getParameter("proxy", "javassist");
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.rpc.ProxyFactory) name from url(" + url.toString() + ") use keys([proxy])");
+com.alibaba.dubbo.rpc.ProxyFactory extension = (com.alibaba.dubbo.rpc.ProxyFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.ProxyFactory.class).getExtension(extName);
+return extension.getProxy(arg0);
+}
+}, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:12:35,099 3338   [           main] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] The service ready on spring started. service: com.yuan.gmall.service.UserService, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:12:35,157 3396   [           main] DEBUG mmon.extension.ExtensionLoader  -  [DUBBO] package com.alibaba.dubbo.cache;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class CacheFactory$Adaptive implements com.alibaba.dubbo.cache.CacheFactory {
+public com.alibaba.dubbo.cache.Cache getCache(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getParameter("cache", "lru");
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.cache.CacheFactory) name from url(" + url.toString() + ") use keys([cache])");
+com.alibaba.dubbo.cache.CacheFactory extension = (com.alibaba.dubbo.cache.CacheFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.cache.CacheFactory.class).getExtension(extName);
+return extension.getCache(arg0);
+}
+}, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:12:35,167 3406   [           main] DEBUG mmon.extension.ExtensionLoader  -  [DUBBO] package com.alibaba.dubbo.monitor;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class MonitorFactory$Adaptive implements com.alibaba.dubbo.monitor.MonitorFactory {
+public com.alibaba.dubbo.monitor.Monitor getMonitor(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = ( url.getProtocol() == null ? "dubbo" : url.getProtocol() );
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.monitor.MonitorFactory) name from url(" + url.toString() + ") use keys([protocol])");
+com.alibaba.dubbo.monitor.MonitorFactory extension = (com.alibaba.dubbo.monitor.MonitorFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.monitor.MonitorFactory.class).getExtension(extName);
+return extension.getMonitor(arg0);
+}
+}, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:12:35,177 3416   [           main] DEBUG mmon.extension.ExtensionLoader  -  [DUBBO] package com.alibaba.dubbo.validation;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class Validation$Adaptive implements com.alibaba.dubbo.validation.Validation {
+public com.alibaba.dubbo.validation.Validator getValidator(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getParameter("validation", "jvalidation");
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.validation.Validation) name from url(" + url.toString() + ") use keys([validation])");
+com.alibaba.dubbo.validation.Validation extension = (com.alibaba.dubbo.validation.Validation)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.validation.Validation.class).getExtension(extName);
+return extension.getValidator(arg0);
+}
+}, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:12:35,187 3426   [           main] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] Export dubbo service com.yuan.gmall.service.UserService to local registry, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:12:35,187 3426   [           main] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] Export dubbo service com.yuan.gmall.service.UserService to url dubbo://192.168.157.1:53660/com.yuan.gmall.service.UserService?anyhost=true&application=user-service&bind.ip=192.168.157.1&bind.port=53660&default.service.filter=regerProviderFilter&dubbo=2.6.0&generic=false&interface=com.yuan.gmall.service.UserService&methods=selectAllUser,getReceiveAddressByMemberId,updateById,saveUser,deleteUserById&pid=8008&side=provider&timestamp=1578294755108, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:12:35,187 3426   [           main] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] Register dubbo service com.yuan.gmall.service.UserService url dubbo://192.168.157.1:53660/com.yuan.gmall.service.UserService?anyhost=true&application=user-service&bind.ip=192.168.157.1&bind.port=53660&default.service.filter=regerProviderFilter&dubbo=2.6.0&generic=false&interface=com.yuan.gmall.service.UserService&methods=selectAllUser,getReceiveAddressByMemberId,updateById,saveUser,deleteUserById&pid=8008&side=provider&timestamp=1578294755108 to registry registry://192.168.157.158:2181/com.alibaba.dubbo.registry.RegistryService?application=user-service&client=zkclient&dubbo=2.6.0&pid=8008&registry=zookeeper&timestamp=1578294755105, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:12:35,194 3433   [           main] DEBUG mmon.extension.ExtensionLoader  -  [DUBBO] package com.alibaba.dubbo.rpc.cluster;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class Cluster$Adaptive implements com.alibaba.dubbo.rpc.cluster.Cluster {
+public com.alibaba.dubbo.rpc.Invoker join(com.alibaba.dubbo.rpc.cluster.Directory arg0) throws com.alibaba.dubbo.rpc.RpcException {
+if (arg0 == null) throw new IllegalArgumentException("com.alibaba.dubbo.rpc.cluster.Directory argument == null");
+if (arg0.getUrl() == null) throw new IllegalArgumentException("com.alibaba.dubbo.rpc.cluster.Directory argument getUrl() == null");com.alibaba.dubbo.common.URL url = arg0.getUrl();
+String extName = url.getParameter("cluster", "failover");
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.rpc.cluster.Cluster) name from url(" + url.toString() + ") use keys([cluster])");
+com.alibaba.dubbo.rpc.cluster.Cluster extension = (com.alibaba.dubbo.rpc.cluster.Cluster)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.cluster.Cluster.class).getExtension(extName);
+return extension.join(arg0);
+}
+}, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:12:35,206 3445   [           main] DEBUG mmon.extension.ExtensionLoader  -  [DUBBO] package com.alibaba.dubbo.registry;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class RegistryFactory$Adaptive implements com.alibaba.dubbo.registry.RegistryFactory {
+public com.alibaba.dubbo.registry.Registry getRegistry(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = ( url.getProtocol() == null ? "dubbo" : url.getProtocol() );
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.registry.RegistryFactory) name from url(" + url.toString() + ") use keys([protocol])");
+com.alibaba.dubbo.registry.RegistryFactory extension = (com.alibaba.dubbo.registry.RegistryFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.registry.RegistryFactory.class).getExtension(extName);
+return extension.getRegistry(arg0);
+}
+}, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:12:35,226 3465   [           main] DEBUG mmon.extension.ExtensionLoader  -  [DUBBO] package com.alibaba.dubbo.remoting;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class Transporter$Adaptive implements com.alibaba.dubbo.remoting.Transporter {
+public com.alibaba.dubbo.remoting.Client connect(com.alibaba.dubbo.common.URL arg0, com.alibaba.dubbo.remoting.ChannelHandler arg1) throws com.alibaba.dubbo.remoting.RemotingException {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getParameter("client", url.getParameter("transporter", "netty"));
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.remoting.Transporter) name from url(" + url.toString() + ") use keys([client, transporter])");
+com.alibaba.dubbo.remoting.Transporter extension = (com.alibaba.dubbo.remoting.Transporter)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.remoting.Transporter.class).getExtension(extName);
+return extension.connect(arg0, arg1);
+}
+public com.alibaba.dubbo.remoting.Server bind(com.alibaba.dubbo.common.URL arg0, com.alibaba.dubbo.remoting.ChannelHandler arg1) throws com.alibaba.dubbo.remoting.RemotingException {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getParameter("server", url.getParameter("transporter", "netty"));
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.remoting.Transporter) name from url(" + url.toString() + ") use keys([server, transporter])");
+com.alibaba.dubbo.remoting.Transporter extension = (com.alibaba.dubbo.remoting.Transporter)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.remoting.Transporter.class).getExtension(extName);
+return extension.bind(arg0, arg1);
+}
+}, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:12:35,245 3484   [           main] DEBUG mmon.extension.ExtensionLoader  -  [DUBBO] package com.alibaba.dubbo.remoting;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class Dispatcher$Adaptive implements com.alibaba.dubbo.remoting.Dispatcher {
+public com.alibaba.dubbo.remoting.ChannelHandler dispatch(com.alibaba.dubbo.remoting.ChannelHandler arg0, com.alibaba.dubbo.common.URL arg1) {
+if (arg1 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg1;
+String extName = url.getParameter("dispatcher", url.getParameter("dispather", url.getParameter("channel.handler", "all")));
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.remoting.Dispatcher) name from url(" + url.toString() + ") use keys([dispatcher, dispather, channel.handler])");
+com.alibaba.dubbo.remoting.Dispatcher extension = (com.alibaba.dubbo.remoting.Dispatcher)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.remoting.Dispatcher.class).getExtension(extName);
+return extension.dispatch(arg0, arg1);
+}
+}, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:12:35,281 3520   [           main] DEBUG mmon.extension.ExtensionLoader  -  [DUBBO] package com.alibaba.dubbo.common.threadpool;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class ThreadPool$Adaptive implements com.alibaba.dubbo.common.threadpool.ThreadPool {
+public java.util.concurrent.Executor getExecutor(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getParameter("threadpool", "fixed");
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.common.threadpool.ThreadPool) name from url(" + url.toString() + ") use keys([threadpool])");
+com.alibaba.dubbo.common.threadpool.ThreadPool extension = (com.alibaba.dubbo.common.threadpool.ThreadPool)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.common.threadpool.ThreadPool.class).getExtension(extName);
+return extension.getExecutor(arg0);
+}
+}, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:12:35,330 3569   [           main] DEBUG socket.nio.NioProviderMetadata  -  [DUBBO] Using the autodetected NIO constraint level: 0, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:12:35,600 3839   [           main] INFO  oting.transport.AbstractServer  -  [DUBBO] Start NettyServer bind /0.0.0.0:53660, export /192.168.157.1:53660, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:12:35,608 3847   [           main] DEBUG mmon.extension.ExtensionLoader  -  [DUBBO] package com.alibaba.dubbo.remoting.zookeeper;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class ZookeeperTransporter$Adaptive implements com.alibaba.dubbo.remoting.zookeeper.ZookeeperTransporter {
+public com.alibaba.dubbo.remoting.zookeeper.ZookeeperClient connect(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getParameter("client", url.getParameter("transporter", "zkclient"));
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.remoting.zookeeper.ZookeeperTransporter) name from url(" + url.toString() + ") use keys([client, transporter])");
+com.alibaba.dubbo.remoting.zookeeper.ZookeeperTransporter extension = (com.alibaba.dubbo.remoting.zookeeper.ZookeeperTransporter)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.remoting.zookeeper.ZookeeperTransporter.class).getExtension(extName);
+return extension.connect(arg0);
+}
+}, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:12:35,625 3864   [           main] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Load registry store file C:\Users\xjy\.dubbo\dubbo-registry-user-service-192.168.157.158:2181.cache, data: {com.yuan.gmall.service.UserService=empty://192.168.157.1:53619/com.yuan.gmall.service.UserService?anyhost=true&application=user-service&category=configurators&check=false&default.service.filter=regerProviderFilter&dubbo=2.6.0&generic=false&interface=com.yuan.gmall.service.UserService&methods=selectAllUser,getReceiveAddressByMemberId,updateById,deleteUserById,saveUser&pid=10020&side=provider&timestamp=1577536501130, com.atguigu.gmall.service.UserService=empty://192.168.157.1:53632/com.atguigu.gmall.service.UserService?anyhost=true&application=user-service&category=configurators&check=false&default.service.filter=regerProviderFilter&dubbo=2.6.0&generic=false&interface=com.atguigu.gmall.service.UserService&methods=getReceiveAddressByMemberId,getAllUser&pid=15392&side=provider&timestamp=1577434712007}, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:12:35,636 3875   [           main] INFO  ommon.concurrent.ExecutionList  -  [DUBBO] Executor for listenablefuture is null, will use default executor!, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:12:35,680 3919   [           main] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Register: dubbo://192.168.157.1:53660/com.yuan.gmall.service.UserService?anyhost=true&application=user-service&default.service.filter=regerProviderFilter&dubbo=2.6.0&generic=false&interface=com.yuan.gmall.service.UserService&methods=selectAllUser,getReceiveAddressByMemberId,updateById,saveUser,deleteUserById&pid=8008&side=provider&timestamp=1578294755108, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:12:35,694 3933   [           main] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Subscribe: provider://192.168.157.1:53660/com.yuan.gmall.service.UserService?anyhost=true&application=user-service&category=configurators&check=false&default.service.filter=regerProviderFilter&dubbo=2.6.0&generic=false&interface=com.yuan.gmall.service.UserService&methods=selectAllUser,getReceiveAddressByMemberId,updateById,saveUser,deleteUserById&pid=8008&side=provider&timestamp=1578294755108, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:12:35,709 3948   [           main] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Notify urls for subscribe url provider://192.168.157.1:53660/com.yuan.gmall.service.UserService?anyhost=true&application=user-service&category=configurators&check=false&default.service.filter=regerProviderFilter&dubbo=2.6.0&generic=false&interface=com.yuan.gmall.service.UserService&methods=selectAllUser,getReceiveAddressByMemberId,updateById,saveUser,deleteUserById&pid=8008&side=provider&timestamp=1578294755108, urls: [empty://192.168.157.1:53660/com.yuan.gmall.service.UserService?anyhost=true&application=user-service&category=configurators&check=false&default.service.filter=regerProviderFilter&dubbo=2.6.0&generic=false&interface=com.yuan.gmall.service.UserService&methods=selectAllUser,getReceiveAddressByMemberId,updateById,saveUser,deleteUserById&pid=8008&side=provider&timestamp=1578294755108], dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:12:35,710 3949   [           main] DEBUG y.integration.RegistryProtocol  -  [DUBBO] original override urls: [empty://192.168.157.1:53660/com.yuan.gmall.service.UserService?anyhost=true&application=user-service&category=configurators&check=false&default.service.filter=regerProviderFilter&dubbo=2.6.0&generic=false&interface=com.yuan.gmall.service.UserService&methods=selectAllUser,getReceiveAddressByMemberId,updateById,saveUser,deleteUserById&pid=8008&side=provider&timestamp=1578294755108], dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:12:35,710 3949   [           main] DEBUG y.integration.RegistryProtocol  -  [DUBBO] subscribe url: provider://192.168.157.1:53660/com.yuan.gmall.service.UserService?anyhost=true&application=user-service&category=configurators&check=false&default.service.filter=regerProviderFilter&dubbo=2.6.0&generic=false&interface=com.yuan.gmall.service.UserService&methods=selectAllUser,getReceiveAddressByMemberId,updateById,saveUser,deleteUserById&pid=8008&side=provider&timestamp=1578294755108, override urls: [empty://192.168.157.1:53660/com.yuan.gmall.service.UserService?anyhost=true&application=user-service&category=configurators&check=false&default.service.filter=regerProviderFilter&dubbo=2.6.0&generic=false&interface=com.yuan.gmall.service.UserService&methods=selectAllUser,getReceiveAddressByMemberId,updateById,saveUser,deleteUserById&pid=8008&side=provider&timestamp=1578294755108], dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:12:35,716 3955   [           main] DEBUG mmon.extension.ExtensionLoader  -  [DUBBO] package com.alibaba.dubbo.rpc.cluster;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class RouterFactory$Adaptive implements com.alibaba.dubbo.rpc.cluster.RouterFactory {
+public com.alibaba.dubbo.rpc.cluster.Router getRouter(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getProtocol();
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.rpc.cluster.RouterFactory) name from url(" + url.toString() + ") use keys([protocol])");
+com.alibaba.dubbo.rpc.cluster.RouterFactory extension = (com.alibaba.dubbo.rpc.cluster.RouterFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.cluster.RouterFactory.class).getExtension(extName);
+return extension.getRouter(arg0);
+}
+}, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:12:35,722 3961   [           main] DEBUG mmon.extension.ExtensionLoader  -  [DUBBO] package com.alibaba.dubbo.rpc.cluster;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class ConfiguratorFactory$Adaptive implements com.alibaba.dubbo.rpc.cluster.ConfiguratorFactory {
+public com.alibaba.dubbo.rpc.cluster.Configurator getConfigurator(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getProtocol();
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.rpc.cluster.ConfiguratorFactory) name from url(" + url.toString() + ") use keys([protocol])");
+com.alibaba.dubbo.rpc.cluster.ConfiguratorFactory extension = (com.alibaba.dubbo.rpc.cluster.ConfiguratorFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.cluster.ConfiguratorFactory.class).getExtension(extName);
+return extension.getConfigurator(arg0);
+}
+}, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:15:23,179 171418 [bboShutdownHook] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] Run shutdown hook now., dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:15:23,180 171419 [bboShutdownHook] INFO  upport.AbstractRegistryFactory  -  [DUBBO] Close all registries [zookeeper://192.168.157.158:2181/com.alibaba.dubbo.registry.RegistryService?application=user-service&client=zkclient&dubbo=2.6.0&interface=com.alibaba.dubbo.registry.RegistryService&pid=8008&timestamp=1578294755105], dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:15:23,180 171419 [bboShutdownHook] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Destroy registry:zookeeper://192.168.157.158:2181/com.alibaba.dubbo.registry.RegistryService?application=user-service&client=zkclient&dubbo=2.6.0&interface=com.alibaba.dubbo.registry.RegistryService&pid=8008&timestamp=1578294755105, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:15:23,180 171419 [bboShutdownHook] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Destroy unregister url dubbo://192.168.157.1:53660/com.yuan.gmall.service.UserService?anyhost=true&application=user-service&default.service.filter=regerProviderFilter&dubbo=2.6.0&generic=false&interface=com.yuan.gmall.service.UserService&methods=selectAllUser,getReceiveAddressByMemberId,updateById,saveUser,deleteUserById&pid=8008&side=provider&timestamp=1578294755108, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:15:23,180 171419 [bboShutdownHook] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Destroy unsubscribe url provider://192.168.157.1:53660/com.yuan.gmall.service.UserService?anyhost=true&application=user-service&category=configurators&check=false&default.service.filter=regerProviderFilter&dubbo=2.6.0&generic=false&interface=com.yuan.gmall.service.UserService&methods=selectAllUser,getReceiveAddressByMemberId,updateById,saveUser,deleteUserById&pid=8008&side=provider&timestamp=1578294755108, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:15:23,185 171424 [      Thread-18] INFO  upport.AbstractRegistryFactory  -  [DUBBO] Close all registries [zookeeper://192.168.157.158:2181/com.alibaba.dubbo.registry.RegistryService?application=user-service&client=zkclient&dubbo=2.6.0&interface=com.alibaba.dubbo.registry.RegistryService&pid=8008&timestamp=1578294755105], dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:15:23,188 171427 [bboShutdownHook] INFO  c.protocol.dubbo.DubboProtocol  -  [DUBBO] Close dubbo server: /192.168.157.1:53660, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:15:23,190 171429 [bboShutdownHook] INFO  oting.transport.AbstractServer  -  [DUBBO] Close NettyServer bind /0.0.0.0:53660, export /192.168.157.1:53660, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:15:30,600 0      [           main] INFO  bo.common.logger.LoggerFactory  - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2020-01-06 15:15:33,078 2478   [           main] DEBUG mmon.extension.ExtensionLoader  -  [DUBBO] package com.alibaba.dubbo.rpc;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class Protocol$Adaptive implements com.alibaba.dubbo.rpc.Protocol {
+public void destroy() {throw new UnsupportedOperationException("method public abstract void com.alibaba.dubbo.rpc.Protocol.destroy() of interface com.alibaba.dubbo.rpc.Protocol is not adaptive method!");
+}
+public int getDefaultPort() {throw new UnsupportedOperationException("method public abstract int com.alibaba.dubbo.rpc.Protocol.getDefaultPort() of interface com.alibaba.dubbo.rpc.Protocol is not adaptive method!");
+}
+public com.alibaba.dubbo.rpc.Invoker refer(java.lang.Class arg0, com.alibaba.dubbo.common.URL arg1) throws com.alibaba.dubbo.rpc.RpcException {
+if (arg1 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg1;
+String extName = ( url.getProtocol() == null ? "dubbo" : url.getProtocol() );
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.rpc.Protocol) name from url(" + url.toString() + ") use keys([protocol])");
+com.alibaba.dubbo.rpc.Protocol extension = (com.alibaba.dubbo.rpc.Protocol)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.Protocol.class).getExtension(extName);
+return extension.refer(arg0, arg1);
+}
+public com.alibaba.dubbo.rpc.Exporter export(com.alibaba.dubbo.rpc.Invoker arg0) throws com.alibaba.dubbo.rpc.RpcException {
+if (arg0 == null) throw new IllegalArgumentException("com.alibaba.dubbo.rpc.Invoker argument == null");
+if (arg0.getUrl() == null) throw new IllegalArgumentException("com.alibaba.dubbo.rpc.Invoker argument getUrl() == null");com.alibaba.dubbo.common.URL url = arg0.getUrl();
+String extName = ( url.getProtocol() == null ? "dubbo" : url.getProtocol() );
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.rpc.Protocol) name from url(" + url.toString() + ") use keys([protocol])");
+com.alibaba.dubbo.rpc.Protocol extension = (com.alibaba.dubbo.rpc.Protocol)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.Protocol.class).getExtension(extName);
+return extension.export(arg0);
+}
+}, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:15:33,157 2557   [           main] DEBUG mmon.extension.ExtensionLoader  -  [DUBBO] package com.alibaba.dubbo.rpc;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class ProxyFactory$Adaptive implements com.alibaba.dubbo.rpc.ProxyFactory {
+public java.lang.Object getProxy(com.alibaba.dubbo.rpc.Invoker arg0) throws com.alibaba.dubbo.rpc.RpcException {
+if (arg0 == null) throw new IllegalArgumentException("com.alibaba.dubbo.rpc.Invoker argument == null");
+if (arg0.getUrl() == null) throw new IllegalArgumentException("com.alibaba.dubbo.rpc.Invoker argument getUrl() == null");com.alibaba.dubbo.common.URL url = arg0.getUrl();
+String extName = url.getParameter("proxy", "javassist");
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.rpc.ProxyFactory) name from url(" + url.toString() + ") use keys([proxy])");
+com.alibaba.dubbo.rpc.ProxyFactory extension = (com.alibaba.dubbo.rpc.ProxyFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.ProxyFactory.class).getExtension(extName);
+return extension.getProxy(arg0);
+}
+public com.alibaba.dubbo.rpc.Invoker getInvoker(java.lang.Object arg0, java.lang.Class arg1, com.alibaba.dubbo.common.URL arg2) throws com.alibaba.dubbo.rpc.RpcException {
+if (arg2 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg2;
+String extName = url.getParameter("proxy", "javassist");
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.rpc.ProxyFactory) name from url(" + url.toString() + ") use keys([proxy])");
+com.alibaba.dubbo.rpc.ProxyFactory extension = (com.alibaba.dubbo.rpc.ProxyFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.ProxyFactory.class).getExtension(extName);
+return extension.getInvoker(arg0, arg1, arg2);
+}
+}, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:15:33,406 2806   [           main] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] The service ready on spring started. service: com.yuan.gmall.service.UserService, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:15:33,451 2851   [           main] DEBUG mmon.extension.ExtensionLoader  -  [DUBBO] package com.alibaba.dubbo.cache;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class CacheFactory$Adaptive implements com.alibaba.dubbo.cache.CacheFactory {
+public com.alibaba.dubbo.cache.Cache getCache(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getParameter("cache", "lru");
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.cache.CacheFactory) name from url(" + url.toString() + ") use keys([cache])");
+com.alibaba.dubbo.cache.CacheFactory extension = (com.alibaba.dubbo.cache.CacheFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.cache.CacheFactory.class).getExtension(extName);
+return extension.getCache(arg0);
+}
+}, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:15:33,461 2861   [           main] DEBUG mmon.extension.ExtensionLoader  -  [DUBBO] package com.alibaba.dubbo.monitor;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class MonitorFactory$Adaptive implements com.alibaba.dubbo.monitor.MonitorFactory {
+public com.alibaba.dubbo.monitor.Monitor getMonitor(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = ( url.getProtocol() == null ? "dubbo" : url.getProtocol() );
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.monitor.MonitorFactory) name from url(" + url.toString() + ") use keys([protocol])");
+com.alibaba.dubbo.monitor.MonitorFactory extension = (com.alibaba.dubbo.monitor.MonitorFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.monitor.MonitorFactory.class).getExtension(extName);
+return extension.getMonitor(arg0);
+}
+}, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:15:33,471 2871   [           main] DEBUG mmon.extension.ExtensionLoader  -  [DUBBO] package com.alibaba.dubbo.validation;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class Validation$Adaptive implements com.alibaba.dubbo.validation.Validation {
+public com.alibaba.dubbo.validation.Validator getValidator(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getParameter("validation", "jvalidation");
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.validation.Validation) name from url(" + url.toString() + ") use keys([validation])");
+com.alibaba.dubbo.validation.Validation extension = (com.alibaba.dubbo.validation.Validation)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.validation.Validation.class).getExtension(extName);
+return extension.getValidator(arg0);
+}
+}, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:15:33,481 2881   [           main] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] Export dubbo service com.yuan.gmall.service.UserService to local registry, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:15:33,481 2881   [           main] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] Export dubbo service com.yuan.gmall.service.UserService to url dubbo://192.168.157.1:53616/com.yuan.gmall.service.UserService?anyhost=true&application=user-service&bind.ip=192.168.157.1&bind.port=53616&default.service.filter=regerProviderFilter&dubbo=2.6.0&generic=false&interface=com.yuan.gmall.service.UserService&methods=selectAllUser,getReceiveAddressByMemberId,saveUser,deleteUserById,updateById&pid=12148&side=provider&timestamp=1578294933413, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:15:33,481 2881   [           main] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] Register dubbo service com.yuan.gmall.service.UserService url dubbo://192.168.157.1:53616/com.yuan.gmall.service.UserService?anyhost=true&application=user-service&bind.ip=192.168.157.1&bind.port=53616&default.service.filter=regerProviderFilter&dubbo=2.6.0&generic=false&interface=com.yuan.gmall.service.UserService&methods=selectAllUser,getReceiveAddressByMemberId,saveUser,deleteUserById,updateById&pid=12148&side=provider&timestamp=1578294933413 to registry registry://192.168.157.158:2181/com.alibaba.dubbo.registry.RegistryService?application=user-service&client=zkclient&dubbo=2.6.0&pid=12148&registry=zookeeper&timestamp=1578294933411, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:15:33,488 2888   [           main] DEBUG mmon.extension.ExtensionLoader  -  [DUBBO] package com.alibaba.dubbo.rpc.cluster;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class Cluster$Adaptive implements com.alibaba.dubbo.rpc.cluster.Cluster {
+public com.alibaba.dubbo.rpc.Invoker join(com.alibaba.dubbo.rpc.cluster.Directory arg0) throws com.alibaba.dubbo.rpc.RpcException {
+if (arg0 == null) throw new IllegalArgumentException("com.alibaba.dubbo.rpc.cluster.Directory argument == null");
+if (arg0.getUrl() == null) throw new IllegalArgumentException("com.alibaba.dubbo.rpc.cluster.Directory argument getUrl() == null");com.alibaba.dubbo.common.URL url = arg0.getUrl();
+String extName = url.getParameter("cluster", "failover");
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.rpc.cluster.Cluster) name from url(" + url.toString() + ") use keys([cluster])");
+com.alibaba.dubbo.rpc.cluster.Cluster extension = (com.alibaba.dubbo.rpc.cluster.Cluster)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.cluster.Cluster.class).getExtension(extName);
+return extension.join(arg0);
+}
+}, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:15:33,501 2901   [           main] DEBUG mmon.extension.ExtensionLoader  -  [DUBBO] package com.alibaba.dubbo.registry;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class RegistryFactory$Adaptive implements com.alibaba.dubbo.registry.RegistryFactory {
+public com.alibaba.dubbo.registry.Registry getRegistry(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = ( url.getProtocol() == null ? "dubbo" : url.getProtocol() );
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.registry.RegistryFactory) name from url(" + url.toString() + ") use keys([protocol])");
+com.alibaba.dubbo.registry.RegistryFactory extension = (com.alibaba.dubbo.registry.RegistryFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.registry.RegistryFactory.class).getExtension(extName);
+return extension.getRegistry(arg0);
+}
+}, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:15:33,521 2921   [           main] DEBUG mmon.extension.ExtensionLoader  -  [DUBBO] package com.alibaba.dubbo.remoting;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class Transporter$Adaptive implements com.alibaba.dubbo.remoting.Transporter {
+public com.alibaba.dubbo.remoting.Client connect(com.alibaba.dubbo.common.URL arg0, com.alibaba.dubbo.remoting.ChannelHandler arg1) throws com.alibaba.dubbo.remoting.RemotingException {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getParameter("client", url.getParameter("transporter", "netty"));
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.remoting.Transporter) name from url(" + url.toString() + ") use keys([client, transporter])");
+com.alibaba.dubbo.remoting.Transporter extension = (com.alibaba.dubbo.remoting.Transporter)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.remoting.Transporter.class).getExtension(extName);
+return extension.connect(arg0, arg1);
+}
+public com.alibaba.dubbo.remoting.Server bind(com.alibaba.dubbo.common.URL arg0, com.alibaba.dubbo.remoting.ChannelHandler arg1) throws com.alibaba.dubbo.remoting.RemotingException {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getParameter("server", url.getParameter("transporter", "netty"));
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.remoting.Transporter) name from url(" + url.toString() + ") use keys([server, transporter])");
+com.alibaba.dubbo.remoting.Transporter extension = (com.alibaba.dubbo.remoting.Transporter)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.remoting.Transporter.class).getExtension(extName);
+return extension.bind(arg0, arg1);
+}
+}, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:15:33,536 2936   [           main] DEBUG mmon.extension.ExtensionLoader  -  [DUBBO] package com.alibaba.dubbo.remoting;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class Dispatcher$Adaptive implements com.alibaba.dubbo.remoting.Dispatcher {
+public com.alibaba.dubbo.remoting.ChannelHandler dispatch(com.alibaba.dubbo.remoting.ChannelHandler arg0, com.alibaba.dubbo.common.URL arg1) {
+if (arg1 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg1;
+String extName = url.getParameter("dispatcher", url.getParameter("dispather", url.getParameter("channel.handler", "all")));
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.remoting.Dispatcher) name from url(" + url.toString() + ") use keys([dispatcher, dispather, channel.handler])");
+com.alibaba.dubbo.remoting.Dispatcher extension = (com.alibaba.dubbo.remoting.Dispatcher)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.remoting.Dispatcher.class).getExtension(extName);
+return extension.dispatch(arg0, arg1);
+}
+}, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:15:33,545 2945   [           main] DEBUG mmon.extension.ExtensionLoader  -  [DUBBO] package com.alibaba.dubbo.common.threadpool;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class ThreadPool$Adaptive implements com.alibaba.dubbo.common.threadpool.ThreadPool {
+public java.util.concurrent.Executor getExecutor(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getParameter("threadpool", "fixed");
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.common.threadpool.ThreadPool) name from url(" + url.toString() + ") use keys([threadpool])");
+com.alibaba.dubbo.common.threadpool.ThreadPool extension = (com.alibaba.dubbo.common.threadpool.ThreadPool)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.common.threadpool.ThreadPool.class).getExtension(extName);
+return extension.getExecutor(arg0);
+}
+}, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:15:33,574 2974   [           main] DEBUG socket.nio.NioProviderMetadata  -  [DUBBO] Using the autodetected NIO constraint level: 0, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:15:33,820 3220   [           main] INFO  oting.transport.AbstractServer  -  [DUBBO] Start NettyServer bind /0.0.0.0:53616, export /192.168.157.1:53616, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:15:33,826 3226   [           main] DEBUG mmon.extension.ExtensionLoader  -  [DUBBO] package com.alibaba.dubbo.remoting.zookeeper;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class ZookeeperTransporter$Adaptive implements com.alibaba.dubbo.remoting.zookeeper.ZookeeperTransporter {
+public com.alibaba.dubbo.remoting.zookeeper.ZookeeperClient connect(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getParameter("client", url.getParameter("transporter", "zkclient"));
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.remoting.zookeeper.ZookeeperTransporter) name from url(" + url.toString() + ") use keys([client, transporter])");
+com.alibaba.dubbo.remoting.zookeeper.ZookeeperTransporter extension = (com.alibaba.dubbo.remoting.zookeeper.ZookeeperTransporter)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.remoting.zookeeper.ZookeeperTransporter.class).getExtension(extName);
+return extension.connect(arg0);
+}
+}, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:15:33,838 3238   [           main] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Load registry store file C:\Users\xjy\.dubbo\dubbo-registry-user-service-192.168.157.158:2181.cache, data: {com.yuan.gmall.service.UserService=empty://192.168.157.1:53660/com.yuan.gmall.service.UserService?anyhost=true&application=user-service&category=configurators&check=false&default.service.filter=regerProviderFilter&dubbo=2.6.0&generic=false&interface=com.yuan.gmall.service.UserService&methods=selectAllUser,getReceiveAddressByMemberId,updateById,saveUser,deleteUserById&pid=8008&side=provider&timestamp=1578294755108, com.atguigu.gmall.service.UserService=empty://192.168.157.1:53632/com.atguigu.gmall.service.UserService?anyhost=true&application=user-service&category=configurators&check=false&default.service.filter=regerProviderFilter&dubbo=2.6.0&generic=false&interface=com.atguigu.gmall.service.UserService&methods=getReceiveAddressByMemberId,getAllUser&pid=15392&side=provider&timestamp=1577434712007}, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:15:33,846 3246   [           main] INFO  ommon.concurrent.ExecutionList  -  [DUBBO] Executor for listenablefuture is null, will use default executor!, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:15:33,890 3290   [           main] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Register: dubbo://192.168.157.1:53616/com.yuan.gmall.service.UserService?anyhost=true&application=user-service&default.service.filter=regerProviderFilter&dubbo=2.6.0&generic=false&interface=com.yuan.gmall.service.UserService&methods=selectAllUser,getReceiveAddressByMemberId,saveUser,deleteUserById,updateById&pid=12148&side=provider&timestamp=1578294933413, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:15:33,902 3302   [           main] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Subscribe: provider://192.168.157.1:53616/com.yuan.gmall.service.UserService?anyhost=true&application=user-service&category=configurators&check=false&default.service.filter=regerProviderFilter&dubbo=2.6.0&generic=false&interface=com.yuan.gmall.service.UserService&methods=selectAllUser,getReceiveAddressByMemberId,saveUser,deleteUserById,updateById&pid=12148&side=provider&timestamp=1578294933413, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:15:33,916 3316   [           main] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Notify urls for subscribe url provider://192.168.157.1:53616/com.yuan.gmall.service.UserService?anyhost=true&application=user-service&category=configurators&check=false&default.service.filter=regerProviderFilter&dubbo=2.6.0&generic=false&interface=com.yuan.gmall.service.UserService&methods=selectAllUser,getReceiveAddressByMemberId,saveUser,deleteUserById,updateById&pid=12148&side=provider&timestamp=1578294933413, urls: [empty://192.168.157.1:53616/com.yuan.gmall.service.UserService?anyhost=true&application=user-service&category=configurators&check=false&default.service.filter=regerProviderFilter&dubbo=2.6.0&generic=false&interface=com.yuan.gmall.service.UserService&methods=selectAllUser,getReceiveAddressByMemberId,saveUser,deleteUserById,updateById&pid=12148&side=provider&timestamp=1578294933413], dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:15:33,917 3317   [           main] DEBUG y.integration.RegistryProtocol  -  [DUBBO] original override urls: [empty://192.168.157.1:53616/com.yuan.gmall.service.UserService?anyhost=true&application=user-service&category=configurators&check=false&default.service.filter=regerProviderFilter&dubbo=2.6.0&generic=false&interface=com.yuan.gmall.service.UserService&methods=selectAllUser,getReceiveAddressByMemberId,saveUser,deleteUserById,updateById&pid=12148&side=provider&timestamp=1578294933413], dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:15:33,918 3318   [           main] DEBUG y.integration.RegistryProtocol  -  [DUBBO] subscribe url: provider://192.168.157.1:53616/com.yuan.gmall.service.UserService?anyhost=true&application=user-service&category=configurators&check=false&default.service.filter=regerProviderFilter&dubbo=2.6.0&generic=false&interface=com.yuan.gmall.service.UserService&methods=selectAllUser,getReceiveAddressByMemberId,saveUser,deleteUserById,updateById&pid=12148&side=provider&timestamp=1578294933413, override urls: [empty://192.168.157.1:53616/com.yuan.gmall.service.UserService?anyhost=true&application=user-service&category=configurators&check=false&default.service.filter=regerProviderFilter&dubbo=2.6.0&generic=false&interface=com.yuan.gmall.service.UserService&methods=selectAllUser,getReceiveAddressByMemberId,saveUser,deleteUserById,updateById&pid=12148&side=provider&timestamp=1578294933413], dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:15:33,925 3325   [           main] DEBUG mmon.extension.ExtensionLoader  -  [DUBBO] package com.alibaba.dubbo.rpc.cluster;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class RouterFactory$Adaptive implements com.alibaba.dubbo.rpc.cluster.RouterFactory {
+public com.alibaba.dubbo.rpc.cluster.Router getRouter(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getProtocol();
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.rpc.cluster.RouterFactory) name from url(" + url.toString() + ") use keys([protocol])");
+com.alibaba.dubbo.rpc.cluster.RouterFactory extension = (com.alibaba.dubbo.rpc.cluster.RouterFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.cluster.RouterFactory.class).getExtension(extName);
+return extension.getRouter(arg0);
+}
+}, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:15:33,931 3331   [           main] DEBUG mmon.extension.ExtensionLoader  -  [DUBBO] package com.alibaba.dubbo.rpc.cluster;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class ConfiguratorFactory$Adaptive implements com.alibaba.dubbo.rpc.cluster.ConfiguratorFactory {
+public com.alibaba.dubbo.rpc.cluster.Configurator getConfigurator(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getProtocol();
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.rpc.cluster.ConfiguratorFactory) name from url(" + url.toString() + ") use keys([protocol])");
+com.alibaba.dubbo.rpc.cluster.ConfiguratorFactory extension = (com.alibaba.dubbo.rpc.cluster.ConfiguratorFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.cluster.ConfiguratorFactory.class).getExtension(extName);
+return extension.getConfigurator(arg0);
+}
+}, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:17:22,344 111744 [bboShutdownHook] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] Run shutdown hook now., dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:17:22,384 111784 [bboShutdownHook] INFO  upport.AbstractRegistryFactory  -  [DUBBO] Close all registries [zookeeper://192.168.157.158:2181/com.alibaba.dubbo.registry.RegistryService?application=user-service&client=zkclient&dubbo=2.6.0&interface=com.alibaba.dubbo.registry.RegistryService&pid=12148&timestamp=1578294933411], dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:17:22,384 111784 [bboShutdownHook] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Destroy registry:zookeeper://192.168.157.158:2181/com.alibaba.dubbo.registry.RegistryService?application=user-service&client=zkclient&dubbo=2.6.0&interface=com.alibaba.dubbo.registry.RegistryService&pid=12148&timestamp=1578294933411, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:17:22,385 111785 [bboShutdownHook] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Destroy unregister url dubbo://192.168.157.1:53616/com.yuan.gmall.service.UserService?anyhost=true&application=user-service&default.service.filter=regerProviderFilter&dubbo=2.6.0&generic=false&interface=com.yuan.gmall.service.UserService&methods=selectAllUser,getReceiveAddressByMemberId,saveUser,deleteUserById,updateById&pid=12148&side=provider&timestamp=1578294933413, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:17:22,385 111785 [bboShutdownHook] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Destroy unsubscribe url provider://192.168.157.1:53616/com.yuan.gmall.service.UserService?anyhost=true&application=user-service&category=configurators&check=false&default.service.filter=regerProviderFilter&dubbo=2.6.0&generic=false&interface=com.yuan.gmall.service.UserService&methods=selectAllUser,getReceiveAddressByMemberId,saveUser,deleteUserById,updateById&pid=12148&side=provider&timestamp=1578294933413, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:17:22,391 111791 [      Thread-17] INFO  upport.AbstractRegistryFactory  -  [DUBBO] Close all registries [zookeeper://192.168.157.158:2181/com.alibaba.dubbo.registry.RegistryService?application=user-service&client=zkclient&dubbo=2.6.0&interface=com.alibaba.dubbo.registry.RegistryService&pid=12148&timestamp=1578294933411], dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:17:22,579 111979 [bboShutdownHook] INFO  c.protocol.dubbo.DubboProtocol  -  [DUBBO] Close dubbo server: /192.168.157.1:53616, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:17:22,580 111980 [bboShutdownHook] INFO  oting.transport.AbstractServer  -  [DUBBO] Close NettyServer bind /0.0.0.0:53616, export /192.168.157.1:53616, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:19:51,184 0      [           main] INFO  bo.common.logger.LoggerFactory  - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2020-01-06 15:19:53,772 2588   [           main] DEBUG mmon.extension.ExtensionLoader  -  [DUBBO] package com.alibaba.dubbo.rpc;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class Protocol$Adaptive implements com.alibaba.dubbo.rpc.Protocol {
+public void destroy() {throw new UnsupportedOperationException("method public abstract void com.alibaba.dubbo.rpc.Protocol.destroy() of interface com.alibaba.dubbo.rpc.Protocol is not adaptive method!");
+}
+public int getDefaultPort() {throw new UnsupportedOperationException("method public abstract int com.alibaba.dubbo.rpc.Protocol.getDefaultPort() of interface com.alibaba.dubbo.rpc.Protocol is not adaptive method!");
+}
+public com.alibaba.dubbo.rpc.Exporter export(com.alibaba.dubbo.rpc.Invoker arg0) throws com.alibaba.dubbo.rpc.RpcException {
+if (arg0 == null) throw new IllegalArgumentException("com.alibaba.dubbo.rpc.Invoker argument == null");
+if (arg0.getUrl() == null) throw new IllegalArgumentException("com.alibaba.dubbo.rpc.Invoker argument getUrl() == null");com.alibaba.dubbo.common.URL url = arg0.getUrl();
+String extName = ( url.getProtocol() == null ? "dubbo" : url.getProtocol() );
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.rpc.Protocol) name from url(" + url.toString() + ") use keys([protocol])");
+com.alibaba.dubbo.rpc.Protocol extension = (com.alibaba.dubbo.rpc.Protocol)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.Protocol.class).getExtension(extName);
+return extension.export(arg0);
+}
+public com.alibaba.dubbo.rpc.Invoker refer(java.lang.Class arg0, com.alibaba.dubbo.common.URL arg1) throws com.alibaba.dubbo.rpc.RpcException {
+if (arg1 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg1;
+String extName = ( url.getProtocol() == null ? "dubbo" : url.getProtocol() );
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.rpc.Protocol) name from url(" + url.toString() + ") use keys([protocol])");
+com.alibaba.dubbo.rpc.Protocol extension = (com.alibaba.dubbo.rpc.Protocol)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.Protocol.class).getExtension(extName);
+return extension.refer(arg0, arg1);
+}
+}, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:19:53,875 2691   [           main] DEBUG mmon.extension.ExtensionLoader  -  [DUBBO] package com.alibaba.dubbo.rpc;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class ProxyFactory$Adaptive implements com.alibaba.dubbo.rpc.ProxyFactory {
+public java.lang.Object getProxy(com.alibaba.dubbo.rpc.Invoker arg0) throws com.alibaba.dubbo.rpc.RpcException {
+if (arg0 == null) throw new IllegalArgumentException("com.alibaba.dubbo.rpc.Invoker argument == null");
+if (arg0.getUrl() == null) throw new IllegalArgumentException("com.alibaba.dubbo.rpc.Invoker argument getUrl() == null");com.alibaba.dubbo.common.URL url = arg0.getUrl();
+String extName = url.getParameter("proxy", "javassist");
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.rpc.ProxyFactory) name from url(" + url.toString() + ") use keys([proxy])");
+com.alibaba.dubbo.rpc.ProxyFactory extension = (com.alibaba.dubbo.rpc.ProxyFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.ProxyFactory.class).getExtension(extName);
+return extension.getProxy(arg0);
+}
+public com.alibaba.dubbo.rpc.Invoker getInvoker(java.lang.Object arg0, java.lang.Class arg1, com.alibaba.dubbo.common.URL arg2) throws com.alibaba.dubbo.rpc.RpcException {
+if (arg2 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg2;
+String extName = url.getParameter("proxy", "javassist");
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.rpc.ProxyFactory) name from url(" + url.toString() + ") use keys([proxy])");
+com.alibaba.dubbo.rpc.ProxyFactory extension = (com.alibaba.dubbo.rpc.ProxyFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.ProxyFactory.class).getExtension(extName);
+return extension.getInvoker(arg0, arg1, arg2);
+}
+}, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:19:53,976 2792   [           main] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] The service ready on spring started. service: com.yuan.gmall.service.UserService, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:19:54,034 2850   [           main] DEBUG mmon.extension.ExtensionLoader  -  [DUBBO] package com.alibaba.dubbo.cache;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class CacheFactory$Adaptive implements com.alibaba.dubbo.cache.CacheFactory {
+public com.alibaba.dubbo.cache.Cache getCache(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getParameter("cache", "lru");
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.cache.CacheFactory) name from url(" + url.toString() + ") use keys([cache])");
+com.alibaba.dubbo.cache.CacheFactory extension = (com.alibaba.dubbo.cache.CacheFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.cache.CacheFactory.class).getExtension(extName);
+return extension.getCache(arg0);
+}
+}, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:19:54,058 2874   [           main] DEBUG mmon.extension.ExtensionLoader  -  [DUBBO] package com.alibaba.dubbo.monitor;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class MonitorFactory$Adaptive implements com.alibaba.dubbo.monitor.MonitorFactory {
+public com.alibaba.dubbo.monitor.Monitor getMonitor(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = ( url.getProtocol() == null ? "dubbo" : url.getProtocol() );
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.monitor.MonitorFactory) name from url(" + url.toString() + ") use keys([protocol])");
+com.alibaba.dubbo.monitor.MonitorFactory extension = (com.alibaba.dubbo.monitor.MonitorFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.monitor.MonitorFactory.class).getExtension(extName);
+return extension.getMonitor(arg0);
+}
+}, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:19:54,077 2893   [           main] DEBUG mmon.extension.ExtensionLoader  -  [DUBBO] package com.alibaba.dubbo.validation;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class Validation$Adaptive implements com.alibaba.dubbo.validation.Validation {
+public com.alibaba.dubbo.validation.Validator getValidator(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getParameter("validation", "jvalidation");
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.validation.Validation) name from url(" + url.toString() + ") use keys([validation])");
+com.alibaba.dubbo.validation.Validation extension = (com.alibaba.dubbo.validation.Validation)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.validation.Validation.class).getExtension(extName);
+return extension.getValidator(arg0);
+}
+}, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:19:54,088 2904   [           main] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] Export dubbo service com.yuan.gmall.service.UserService to local registry, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:19:54,089 2905   [           main] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] Export dubbo service com.yuan.gmall.service.UserService to url dubbo://192.168.157.1:53667/com.yuan.gmall.service.UserService?anyhost=true&application=user-service&bind.ip=192.168.157.1&bind.port=53667&default.service.filter=regerProviderFilter&dubbo=2.6.0&generic=false&interface=com.yuan.gmall.service.UserService&methods=selectAllUser,getReceiveAddressByMemberId,updateById,deleteUserById,saveUser&pid=4160&side=provider&timestamp=1578295193984, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:19:54,089 2905   [           main] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] Register dubbo service com.yuan.gmall.service.UserService url dubbo://192.168.157.1:53667/com.yuan.gmall.service.UserService?anyhost=true&application=user-service&bind.ip=192.168.157.1&bind.port=53667&default.service.filter=regerProviderFilter&dubbo=2.6.0&generic=false&interface=com.yuan.gmall.service.UserService&methods=selectAllUser,getReceiveAddressByMemberId,updateById,deleteUserById,saveUser&pid=4160&side=provider&timestamp=1578295193984 to registry registry://192.168.157.158:2181/com.alibaba.dubbo.registry.RegistryService?application=user-service&client=zkclient&dubbo=2.6.0&pid=4160&registry=zookeeper&timestamp=1578295193982, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:19:54,095 2911   [           main] DEBUG mmon.extension.ExtensionLoader  -  [DUBBO] package com.alibaba.dubbo.rpc.cluster;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class Cluster$Adaptive implements com.alibaba.dubbo.rpc.cluster.Cluster {
+public com.alibaba.dubbo.rpc.Invoker join(com.alibaba.dubbo.rpc.cluster.Directory arg0) throws com.alibaba.dubbo.rpc.RpcException {
+if (arg0 == null) throw new IllegalArgumentException("com.alibaba.dubbo.rpc.cluster.Directory argument == null");
+if (arg0.getUrl() == null) throw new IllegalArgumentException("com.alibaba.dubbo.rpc.cluster.Directory argument getUrl() == null");com.alibaba.dubbo.common.URL url = arg0.getUrl();
+String extName = url.getParameter("cluster", "failover");
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.rpc.cluster.Cluster) name from url(" + url.toString() + ") use keys([cluster])");
+com.alibaba.dubbo.rpc.cluster.Cluster extension = (com.alibaba.dubbo.rpc.cluster.Cluster)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.cluster.Cluster.class).getExtension(extName);
+return extension.join(arg0);
+}
+}, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:19:54,108 2924   [           main] DEBUG mmon.extension.ExtensionLoader  -  [DUBBO] package com.alibaba.dubbo.registry;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class RegistryFactory$Adaptive implements com.alibaba.dubbo.registry.RegistryFactory {
+public com.alibaba.dubbo.registry.Registry getRegistry(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = ( url.getProtocol() == null ? "dubbo" : url.getProtocol() );
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.registry.RegistryFactory) name from url(" + url.toString() + ") use keys([protocol])");
+com.alibaba.dubbo.registry.RegistryFactory extension = (com.alibaba.dubbo.registry.RegistryFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.registry.RegistryFactory.class).getExtension(extName);
+return extension.getRegistry(arg0);
+}
+}, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:19:54,130 2946   [           main] DEBUG mmon.extension.ExtensionLoader  -  [DUBBO] package com.alibaba.dubbo.remoting;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class Transporter$Adaptive implements com.alibaba.dubbo.remoting.Transporter {
+public com.alibaba.dubbo.remoting.Client connect(com.alibaba.dubbo.common.URL arg0, com.alibaba.dubbo.remoting.ChannelHandler arg1) throws com.alibaba.dubbo.remoting.RemotingException {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getParameter("client", url.getParameter("transporter", "netty"));
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.remoting.Transporter) name from url(" + url.toString() + ") use keys([client, transporter])");
+com.alibaba.dubbo.remoting.Transporter extension = (com.alibaba.dubbo.remoting.Transporter)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.remoting.Transporter.class).getExtension(extName);
+return extension.connect(arg0, arg1);
+}
+public com.alibaba.dubbo.remoting.Server bind(com.alibaba.dubbo.common.URL arg0, com.alibaba.dubbo.remoting.ChannelHandler arg1) throws com.alibaba.dubbo.remoting.RemotingException {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getParameter("server", url.getParameter("transporter", "netty"));
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.remoting.Transporter) name from url(" + url.toString() + ") use keys([server, transporter])");
+com.alibaba.dubbo.remoting.Transporter extension = (com.alibaba.dubbo.remoting.Transporter)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.remoting.Transporter.class).getExtension(extName);
+return extension.bind(arg0, arg1);
+}
+}, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:19:54,144 2960   [           main] DEBUG mmon.extension.ExtensionLoader  -  [DUBBO] package com.alibaba.dubbo.remoting;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class Dispatcher$Adaptive implements com.alibaba.dubbo.remoting.Dispatcher {
+public com.alibaba.dubbo.remoting.ChannelHandler dispatch(com.alibaba.dubbo.remoting.ChannelHandler arg0, com.alibaba.dubbo.common.URL arg1) {
+if (arg1 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg1;
+String extName = url.getParameter("dispatcher", url.getParameter("dispather", url.getParameter("channel.handler", "all")));
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.remoting.Dispatcher) name from url(" + url.toString() + ") use keys([dispatcher, dispather, channel.handler])");
+com.alibaba.dubbo.remoting.Dispatcher extension = (com.alibaba.dubbo.remoting.Dispatcher)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.remoting.Dispatcher.class).getExtension(extName);
+return extension.dispatch(arg0, arg1);
+}
+}, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:19:54,174 2990   [           main] DEBUG mmon.extension.ExtensionLoader  -  [DUBBO] package com.alibaba.dubbo.common.threadpool;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class ThreadPool$Adaptive implements com.alibaba.dubbo.common.threadpool.ThreadPool {
+public java.util.concurrent.Executor getExecutor(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getParameter("threadpool", "fixed");
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.common.threadpool.ThreadPool) name from url(" + url.toString() + ") use keys([threadpool])");
+com.alibaba.dubbo.common.threadpool.ThreadPool extension = (com.alibaba.dubbo.common.threadpool.ThreadPool)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.common.threadpool.ThreadPool.class).getExtension(extName);
+return extension.getExecutor(arg0);
+}
+}, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:19:54,207 3023   [           main] DEBUG socket.nio.NioProviderMetadata  -  [DUBBO] Using the autodetected NIO constraint level: 0, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:19:54,267 3083   [           main] INFO  oting.transport.AbstractServer  -  [DUBBO] Start NettyServer bind /0.0.0.0:53667, export /192.168.157.1:53667, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:19:54,277 3093   [           main] DEBUG mmon.extension.ExtensionLoader  -  [DUBBO] package com.alibaba.dubbo.remoting.zookeeper;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class ZookeeperTransporter$Adaptive implements com.alibaba.dubbo.remoting.zookeeper.ZookeeperTransporter {
+public com.alibaba.dubbo.remoting.zookeeper.ZookeeperClient connect(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getParameter("client", url.getParameter("transporter", "zkclient"));
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.remoting.zookeeper.ZookeeperTransporter) name from url(" + url.toString() + ") use keys([client, transporter])");
+com.alibaba.dubbo.remoting.zookeeper.ZookeeperTransporter extension = (com.alibaba.dubbo.remoting.zookeeper.ZookeeperTransporter)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.remoting.zookeeper.ZookeeperTransporter.class).getExtension(extName);
+return extension.connect(arg0);
+}
+}, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:19:54,294 3110   [           main] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Load registry store file C:\Users\xjy\.dubbo\dubbo-registry-user-service-192.168.157.158:2181.cache, data: {com.yuan.gmall.service.UserService=empty://192.168.157.1:53616/com.yuan.gmall.service.UserService?anyhost=true&application=user-service&category=configurators&check=false&default.service.filter=regerProviderFilter&dubbo=2.6.0&generic=false&interface=com.yuan.gmall.service.UserService&methods=selectAllUser,getReceiveAddressByMemberId,saveUser,deleteUserById,updateById&pid=12148&side=provider&timestamp=1578294933413, com.atguigu.gmall.service.UserService=empty://192.168.157.1:53632/com.atguigu.gmall.service.UserService?anyhost=true&application=user-service&category=configurators&check=false&default.service.filter=regerProviderFilter&dubbo=2.6.0&generic=false&interface=com.atguigu.gmall.service.UserService&methods=getReceiveAddressByMemberId,getAllUser&pid=15392&side=provider&timestamp=1577434712007}, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:19:54,301 3117   [           main] INFO  ommon.concurrent.ExecutionList  -  [DUBBO] Executor for listenablefuture is null, will use default executor!, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:19:54,518 3334   [           main] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Register: dubbo://192.168.157.1:53667/com.yuan.gmall.service.UserService?anyhost=true&application=user-service&default.service.filter=regerProviderFilter&dubbo=2.6.0&generic=false&interface=com.yuan.gmall.service.UserService&methods=selectAllUser,getReceiveAddressByMemberId,updateById,deleteUserById,saveUser&pid=4160&side=provider&timestamp=1578295193984, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:19:54,535 3351   [           main] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Subscribe: provider://192.168.157.1:53667/com.yuan.gmall.service.UserService?anyhost=true&application=user-service&category=configurators&check=false&default.service.filter=regerProviderFilter&dubbo=2.6.0&generic=false&interface=com.yuan.gmall.service.UserService&methods=selectAllUser,getReceiveAddressByMemberId,updateById,deleteUserById,saveUser&pid=4160&side=provider&timestamp=1578295193984, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:19:54,551 3367   [           main] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Notify urls for subscribe url provider://192.168.157.1:53667/com.yuan.gmall.service.UserService?anyhost=true&application=user-service&category=configurators&check=false&default.service.filter=regerProviderFilter&dubbo=2.6.0&generic=false&interface=com.yuan.gmall.service.UserService&methods=selectAllUser,getReceiveAddressByMemberId,updateById,deleteUserById,saveUser&pid=4160&side=provider&timestamp=1578295193984, urls: [empty://192.168.157.1:53667/com.yuan.gmall.service.UserService?anyhost=true&application=user-service&category=configurators&check=false&default.service.filter=regerProviderFilter&dubbo=2.6.0&generic=false&interface=com.yuan.gmall.service.UserService&methods=selectAllUser,getReceiveAddressByMemberId,updateById,deleteUserById,saveUser&pid=4160&side=provider&timestamp=1578295193984], dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:19:54,552 3368   [           main] DEBUG y.integration.RegistryProtocol  -  [DUBBO] original override urls: [empty://192.168.157.1:53667/com.yuan.gmall.service.UserService?anyhost=true&application=user-service&category=configurators&check=false&default.service.filter=regerProviderFilter&dubbo=2.6.0&generic=false&interface=com.yuan.gmall.service.UserService&methods=selectAllUser,getReceiveAddressByMemberId,updateById,deleteUserById,saveUser&pid=4160&side=provider&timestamp=1578295193984], dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:19:54,552 3368   [           main] DEBUG y.integration.RegistryProtocol  -  [DUBBO] subscribe url: provider://192.168.157.1:53667/com.yuan.gmall.service.UserService?anyhost=true&application=user-service&category=configurators&check=false&default.service.filter=regerProviderFilter&dubbo=2.6.0&generic=false&interface=com.yuan.gmall.service.UserService&methods=selectAllUser,getReceiveAddressByMemberId,updateById,deleteUserById,saveUser&pid=4160&side=provider&timestamp=1578295193984, override urls: [empty://192.168.157.1:53667/com.yuan.gmall.service.UserService?anyhost=true&application=user-service&category=configurators&check=false&default.service.filter=regerProviderFilter&dubbo=2.6.0&generic=false&interface=com.yuan.gmall.service.UserService&methods=selectAllUser,getReceiveAddressByMemberId,updateById,deleteUserById,saveUser&pid=4160&side=provider&timestamp=1578295193984], dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:19:54,559 3375   [           main] DEBUG mmon.extension.ExtensionLoader  -  [DUBBO] package com.alibaba.dubbo.rpc.cluster;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class RouterFactory$Adaptive implements com.alibaba.dubbo.rpc.cluster.RouterFactory {
+public com.alibaba.dubbo.rpc.cluster.Router getRouter(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getProtocol();
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.rpc.cluster.RouterFactory) name from url(" + url.toString() + ") use keys([protocol])");
+com.alibaba.dubbo.rpc.cluster.RouterFactory extension = (com.alibaba.dubbo.rpc.cluster.RouterFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.cluster.RouterFactory.class).getExtension(extName);
+return extension.getRouter(arg0);
+}
+}, dubbo version: 2.6.0, current host: 127.0.0.1
+2020-01-06 15:19:54,569 3385   [           main] DEBUG mmon.extension.ExtensionLoader  -  [DUBBO] package com.alibaba.dubbo.rpc.cluster;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class ConfiguratorFactory$Adaptive implements com.alibaba.dubbo.rpc.cluster.ConfiguratorFactory {
+public com.alibaba.dubbo.rpc.cluster.Configurator getConfigurator(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getProtocol();
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.rpc.cluster.ConfiguratorFactory) name from url(" + url.toString() + ") use keys([protocol])");
+com.alibaba.dubbo.rpc.cluster.ConfiguratorFactory extension = (com.alibaba.dubbo.rpc.cluster.ConfiguratorFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.cluster.ConfiguratorFactory.class).getExtension(extName);
+return extension.getConfigurator(arg0);
+}
+}, dubbo version: 2.6.0, current host: 127.0.0.1

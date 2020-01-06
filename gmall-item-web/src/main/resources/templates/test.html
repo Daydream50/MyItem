@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>测试</title>
+</head>
+<body>
+123
+da1d
+<br>
+
+<!--循环-->
+<p th:each="strs:${list}" th:text="${strs}"></p>
+
+<br>
+
+<p th:each="strs:${list}">
+    <inpu th:text="${strs}"></inpu>
+</p>
+
+<!--if-->
+<p th:if="1==2">呵呵</p>
+
+<input type="checkbox" th:checked="${checked} == '1'">复选框
+</body>
+</html>

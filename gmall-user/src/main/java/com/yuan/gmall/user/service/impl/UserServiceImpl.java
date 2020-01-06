@@ -1,10 +1,10 @@
 package com.yuan.gmall.user.service.impl;
 
-import com.yuan.gmall.user.bean.UmsMember;
-import com.yuan.gmall.user.bean.UmsMemberReceiveAddress;
+import com.yuan.gmall.bean.UmsMember;
+import com.yuan.gmall.bean.UmsMemberReceiveAddress;
+import com.yuan.gmall.service.UserService;
 import com.yuan.gmall.user.mapper.UmsMemberReceiveAddressMapper;
 import com.yuan.gmall.user.mapper.UserMapper;
-import com.yuan.gmall.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,12 +19,11 @@ public class UserServiceImpl implements UserService {
     @Autowired
     public UmsMemberReceiveAddressMapper umsMemberReceiveAddressMapper;
 
-
     @Override
     public List<UmsMember> selectAllUser() {
-     /*  List<UmsMember> members = userMapper.selectAllUser();*/
+        /*  List<UmsMember> members = userMapper.selectAllUser();*/
         List<UmsMember> members = userMapper.selectAll();
-       return members;
+        return members;
     }
 
     @Override
@@ -34,9 +33,8 @@ public class UserServiceImpl implements UserService {
         umsMemberReceiveAddress.setMemberId(memberId);
         List<UmsMemberReceiveAddress> umsMemberReceiveAddresses = umsMemberReceiveAddressMapper.select(umsMemberReceiveAddress);
 
-        return  umsMemberReceiveAddresses;
+        return umsMemberReceiveAddresses;
     }
-
 
     @Override
     public int updateById(String id) {
