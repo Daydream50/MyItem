@@ -1,6 +1,6 @@
 package com.yuan.gmall.bean;
 
-import com.yuan.gmall.bean.PmsBaseAttrValue;
+
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -10,20 +10,39 @@ import java.util.List;
  * @param
  * @return
  */
+
 public class PmsBaseAttrInfo implements Serializable {
+
 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column
     private String id;
+
+
     @Column
     private String attrName;
+
+
     @Column
     private String catalog3Id;
+
+
     @Column
     private String isEnabled;
+
     @Transient
     List<PmsBaseAttrValue> attrValueList;
+
+    public PmsBaseAttrInfo() {
+    }
+
+    public PmsBaseAttrInfo(String attrName, String catalog3Id, String isEnabled, List<PmsBaseAttrValue> attrValueList) {
+        this.attrName = attrName;
+        this.catalog3Id = catalog3Id;
+        this.isEnabled = isEnabled;
+        this.attrValueList = attrValueList;
+    }
 
     public String getId() {
         return id;
@@ -63,5 +82,10 @@ public class PmsBaseAttrInfo implements Serializable {
 
     public void setAttrValueList(List<PmsBaseAttrValue> attrValueList) {
         this.attrValueList = attrValueList;
+    }
+
+    @Override
+    public String toString() {
+        return "PmsBaseAttrInfo{" + "id='" + id + '\'' + ", attrName='" + attrName + '\'' + ", catalog3Id='" + catalog3Id + '\'' + ", isEnabled='" + isEnabled + '\'' + ", attrValueList=" + attrValueList + '}';
     }
 }

@@ -10,7 +10,7 @@
     <groupId>com.yuan.gmall</groupId>
     <artifactId>item-web</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>item-web</name>
+    <name>gmall-item-web</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>

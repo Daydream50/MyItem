@@ -1,20 +1,23 @@
 package com.yuan.gmall.bean;
 
+
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.List;
-
 /**
  * @param
  * @return
  */
 public class PmsSkuInfo implements Serializable {
 
+
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column
-    String id;
+    @NotNull(message = "SkuInfo,Id不能为空")
+    public String id;
 
     @Column
     String productId;

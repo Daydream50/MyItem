@@ -1,6 +1,5 @@
 package com.yuan.gmall.manage;
 
-
 import com.yuan.gmall.util.RedisUtil;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -11,7 +10,7 @@ import redis.clients.jedis.Jedis;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class GmallManageServiceApplicationTests {
+public class RedisTest {
 
     @Autowired
     RedisUtil redisUtil;
@@ -21,7 +20,5 @@ public class GmallManageServiceApplicationTests {
         Jedis jedis = redisUtil.getJedis();
         System.out.println(jedis);
     }
-
-
 
 }

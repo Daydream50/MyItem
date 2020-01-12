@@ -1,6 +1,8 @@
 package com.yuan.gmall.manage.service.impl;
 
+
 import com.alibaba.dubbo.config.annotation.Service;
+import com.alibaba.fastjson.JSON;
 import com.yuan.gmall.bean.PmsSkuAttrValue;
 import com.yuan.gmall.bean.PmsSkuImage;
 import com.yuan.gmall.bean.PmsSkuInfo;
@@ -10,15 +12,18 @@ import com.yuan.gmall.manage.mapper.PmsSkuImageMapper;
 import com.yuan.gmall.manage.mapper.PmsSkuInfoMapper;
 import com.yuan.gmall.manage.mapper.PmsSkuSaleAttrValueMapper;
 import com.yuan.gmall.service.SkuService;
+import com.yuan.gmall.util.RedisUtil;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
+import redis.clients.jedis.Jedis;
 
 import java.util.List;
+import java.util.Random;
+import java.util.UUID;
 
 @Service
 public class SkuServiceImpl implements SkuService {
-
-
 
     @Autowired
     PmsSkuInfoMapper pmsSkuInfoMapper;
@@ -32,8 +37,13 @@ public class SkuServiceImpl implements SkuService {
     @Autowired
     PmsSkuImageMapper pmsSkuImageMapper;
 
+    @Autowired
+    RedisUtil redisUtil;
+
+
     @Override
     @Transactional
+
     public void insertSkuInfo(PmsSkuInfo pmsSkuInfo) {
         // 插入skuInfo
         int i = pmsSkuInfoMapper.insertSelective(pmsSkuInfo);
@@ -62,12 +72,117 @@ public class SkuServiceImpl implements SkuService {
 
     }
 
-    @Override
-    public PmsSkuInfo getSkuId(String skuId) {
+    public PmsSkuInfo RedisGetSkuId(String skuId) {
+
+        //属性对象
+
         PmsSkuInfo pmsSkuInfo = new PmsSkuInfo();
         pmsSkuInfo.setId(skuId);
         PmsSkuInfo skuInfo = pmsSkuInfoMapper.selectOne(pmsSkuInfo);
 
+        //sku图片集合
+        if (skuInfo != null) {
+            PmsSkuImage pmsSkuImage = new PmsSkuImage();
+            pmsSkuImage.setSkuId(skuId);
+            List<PmsSkuImage> pmsSkuImages = pmsSkuImageMapper.select(pmsSkuImage);
+            skuInfo.setSkuImageList(pmsSkuImages);
+        }
         return skuInfo;
+
+    }
+
+    @Override
+    public PmsSkuInfo getSkuId(String skuId, String ip) {
+
+        System.out.println("请求的IP地址是 ：" + ip + "进程号为" + Thread.currentThread().getName());
+
+        PmsSkuInfo pmsSkuInfo = null;
+
+        Jedis jedis = null;
+
+        try {
+            pmsSkuInfo = new PmsSkuInfo();
+
+            //链接缓存
+            jedis = redisUtil.getJedis();
+
+            //查询缓存
+            String skuKey = "sku" + skuId + ":info";  //key
+            String skuJson = jedis.get(skuKey);   //value
+
+
+            //判断redis中是否存在
+            if (StringUtils.isNotBlank(skuJson)) {   //if(skuJson != null && skuJson.equals("") )
+
+                System.out.println("请求的IP地址是 ：" + ip + "缓存存在" + Thread.currentThread().getName());
+                //返回json格式
+                pmsSkuInfo = JSON.parseObject(skuJson, PmsSkuInfo.class);
+
+            } else {
+                System.out.println("请求的IP地址是 ：" + ip + "缓存不存在加锁10秒过期,查询数据库" + Thread.currentThread().getName());
+
+                //设置分布式锁
+                //防止误删锁设置token
+                String token = UUID.randomUUID().toString();
+                String OK = jedis.set("sku" + skuId + ":lock", token, "nx", "px", 10 * 1000); //10秒过期
+
+                if (StringUtils.isNotBlank(OK) && OK.equals("OK")) {
+
+                    System.out.println("请求的IP地址是 ：" + ip + "加锁成功" + Thread.currentThread().getName());
+
+                    //设置成功在10过期时间内返回数据库
+                    pmsSkuInfo = RedisGetSkuId(skuId);
+
+                    if (pmsSkuInfo != null) {
+                        System.out.println("请求的IP地址是 ：" + ip + "数据存在" + Thread.currentThread().getName());
+                        //mysql结果转为json存入缓存
+                        jedis.set("sku" + skuId + ":info", JSON.toJSONString(pmsSkuInfo));
+                    } else {
+
+                        System.out.println("请求的IP地址是 ：" + ip + "数据不存在" + Thread.currentThread().getName());
+
+                        //为了防止缓存穿透将，null或者空字符串值设置给redis
+                        //为了防止雪崩，集体失效.设置随机值
+                        //缓存击穿是某一个热点key在高并发访问的情况下，突然失效，导致大量的并发打进mysql数据库的情况.解决办法加锁
+                        Random random = new Random();
+                        int time = random.nextInt(10) + 5;
+                        jedis.setex("sku" + skuId + ":info", time, JSON.toJSONString(""));   //三分钟后失效
+                    }
+
+                    String redisToken = jedis.get("sku" + skuId + ":lock");
+                    if (StringUtils.isNotBlank(redisToken) && redisToken.equals(token)) {
+                        //访问成功后将锁删除
+                        System.out.println("请求的IP地址是 ：" + ip + "解锁" + Thread.currentThread().getName());
+                        //使用lua脚本，查询的一瞬间删除
+                       // jedis.eval("sku" + skuId + ":lock");
+                        jedis.del("sku" + skuId + ":lock");
+                    }
+
+                } else {
+
+                    System.out.println("请求的IP地址是 ：" + ip + "锁存在睡眠3秒递归" + Thread.currentThread().getName());
+                    try {
+                        //睡眠，降低抢锁频率，缓解redis压力
+                        Thread.sleep(1);
+                    } catch (InterruptedException ex) {
+                        ex.printStackTrace();
+                    }
+                    return getSkuId(skuId, ip);
+                }
+            }
+        } catch (Exception e) {
+            new Throwable("getSkuId方法查询失败");
+        } finally {
+            jedis.close();
+        }
+
+        return pmsSkuInfo;
+    }
+
+    @Override
+    public List<PmsSkuInfo> getSkuSaleAttrValueList(String productId) {
+
+        List<PmsSkuInfo> pmsSkuInfoList = pmsSkuInfoMapper.selectSkuAttrValue(productId);
+        return pmsSkuInfoList;
     }
 }
