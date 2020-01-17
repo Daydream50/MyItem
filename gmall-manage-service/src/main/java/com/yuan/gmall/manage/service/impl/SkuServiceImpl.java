@@ -18,6 +18,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import redis.clients.jedis.Jedis;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 import java.util.UUID;
@@ -93,8 +94,7 @@ public class SkuServiceImpl implements SkuService {
 
     @Override
     public PmsSkuInfo getSkuId(String skuId, String ip) {
-
-        System.out.println("请求的IP地址是 ：" + ip + "进程号为" + Thread.currentThread().getName());
+        //System.out.println("请求的IP地址是 ：" + ip + "进程号为" + Thread.currentThread().getName());
 
         PmsSkuInfo pmsSkuInfo = null;
 
@@ -114,12 +114,10 @@ public class SkuServiceImpl implements SkuService {
             //判断redis中是否存在
             if (StringUtils.isNotBlank(skuJson)) {   //if(skuJson != null && skuJson.equals("") )
 
-                System.out.println("请求的IP地址是 ：" + ip + "缓存存在" + Thread.currentThread().getName());
                 //返回json格式
                 pmsSkuInfo = JSON.parseObject(skuJson, PmsSkuInfo.class);
 
             } else {
-                System.out.println("请求的IP地址是 ：" + ip + "缓存不存在加锁10秒过期,查询数据库" + Thread.currentThread().getName());
 
                 //设置分布式锁
                 //防止误删锁设置token
@@ -128,18 +126,17 @@ public class SkuServiceImpl implements SkuService {
 
                 if (StringUtils.isNotBlank(OK) && OK.equals("OK")) {
 
-                    System.out.println("请求的IP地址是 ：" + ip + "加锁成功" + Thread.currentThread().getName());
+                   int KId = 0;
+                   System.out.println(""+KId+1);
 
                     //设置成功在10过期时间内返回数据库
                     pmsSkuInfo = RedisGetSkuId(skuId);
 
                     if (pmsSkuInfo != null) {
-                        System.out.println("请求的IP地址是 ：" + ip + "数据存在" + Thread.currentThread().getName());
+
                         //mysql结果转为json存入缓存
                         jedis.set("sku" + skuId + ":info", JSON.toJSONString(pmsSkuInfo));
                     } else {
-
-                        System.out.println("请求的IP地址是 ：" + ip + "数据不存在" + Thread.currentThread().getName());
 
                         //为了防止缓存穿透将，null或者空字符串值设置给redis
                         //为了防止雪崩，集体失效.设置随机值
@@ -152,15 +149,17 @@ public class SkuServiceImpl implements SkuService {
                     String redisToken = jedis.get("sku" + skuId + ":lock");
                     if (StringUtils.isNotBlank(redisToken) && redisToken.equals(token)) {
                         //访问成功后将锁删除
-                        System.out.println("请求的IP地址是 ：" + ip + "解锁" + Thread.currentThread().getName());
+                        // jedis.del("sku" + skuId + ":lock");
+
                         //使用lua脚本，查询的一瞬间删除
-                       // jedis.eval("sku" + skuId + ":lock");
-                        jedis.del("sku" + skuId + ":lock");
+                        String script ="if redis.call('get', KEYS[1]) == ARGV[1] then return redis.call('del', KEYS[1]) else return 0 end";
+                        jedis.eval(script, Collections.singletonList("sku" + skuId + ":lock"),Collections.singletonList(token));
+
                     }
 
                 } else {
 
-                    System.out.println("请求的IP地址是 ：" + ip + "锁存在睡眠3秒递归" + Thread.currentThread().getName());
+
                     try {
                         //睡眠，降低抢锁频率，缓解redis压力
                         Thread.sleep(1);
@@ -183,6 +182,14 @@ public class SkuServiceImpl implements SkuService {
     public List<PmsSkuInfo> getSkuSaleAttrValueList(String productId) {
 
         List<PmsSkuInfo> pmsSkuInfoList = pmsSkuInfoMapper.selectSkuAttrValue(productId);
+        return pmsSkuInfoList;
+    }
+
+    @Override
+    public List<PmsSkuInfo> getAllSku() {
+
+       List<PmsSkuInfo> pmsSkuInfoList =  pmsSkuInfoMapper.selectAll();
+
         return pmsSkuInfoList;
     }
 }

@@ -12,3 +12,8 @@ gmall-manage-web:8081
 
 #前端
 gmall-item-web :8083
+
+
+
+gmall-search-web :8084
+gmall-serach-service 8074
