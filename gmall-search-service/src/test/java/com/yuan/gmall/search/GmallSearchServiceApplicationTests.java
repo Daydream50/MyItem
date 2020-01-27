@@ -49,7 +49,7 @@ public class GmallSearchServiceApplicationTests {
 		List<PmsSkuInfo> pmsSkuInfoList = new ArrayList<>();
 
         // 查询mysql数据
-		pmsSkuInfoList = skuService.getAllSku();
+		pmsSkuInfoList = skuService.getAllSku("61");
 
 		// 转化为es的数据结构
 		List<PmsSearchSkuInfo> pmsSearchSkuInfos = new ArrayList<>();
@@ -67,6 +67,7 @@ public class GmallSearchServiceApplicationTests {
 			BeanUtils.copyProperties(pmsSkuInfo,pmsSearchSkuInfo);
 
 			pmsSearchSkuInfo.setId(Long.parseLong(pmsSkuInfo.getId()));
+
 
 			pmsSearchSkuInfos.add(pmsSearchSkuInfo);
 

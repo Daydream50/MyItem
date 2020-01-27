@@ -6,7 +6,6 @@
         <artifactId>gmall-parent</artifactId>
         <groupId>com.yuan.gmall</groupId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath>../gmall-parent/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -38,6 +37,14 @@
         <dependency>
             <groupId>org.apache.xmlgraphics</groupId>
             <artifactId>batik-ext</artifactId>
+        </dependency>
+
+
+     <!--   jwt加密-->
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>0.9.0</version>
         </dependency>
 
     </dependencies>

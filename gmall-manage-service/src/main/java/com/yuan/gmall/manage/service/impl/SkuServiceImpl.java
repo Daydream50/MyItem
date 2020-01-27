@@ -3,10 +3,7 @@ package com.yuan.gmall.manage.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
 import com.alibaba.fastjson.JSON;
-import com.yuan.gmall.bean.PmsSkuAttrValue;
-import com.yuan.gmall.bean.PmsSkuImage;
-import com.yuan.gmall.bean.PmsSkuInfo;
-import com.yuan.gmall.bean.PmsSkuSaleAttrValue;
+import com.yuan.gmall.bean.*;
 import com.yuan.gmall.manage.mapper.PmsSkuAttrValueMapper;
 import com.yuan.gmall.manage.mapper.PmsSkuImageMapper;
 import com.yuan.gmall.manage.mapper.PmsSkuInfoMapper;
@@ -122,14 +119,14 @@ public class SkuServiceImpl implements SkuService {
                 //设置分布式锁
                 //防止误删锁设置token
                 String token = UUID.randomUUID().toString();
-                String OK = jedis.set("sku" + skuId + ":lock", token, "nx", "px", 10 * 1000); //10秒过期
+                String OK = jedis.set("sku" + skuId + ":lock", token, "nx", "px", 5 * 1000); //5秒过期
 
                 if (StringUtils.isNotBlank(OK) && OK.equals("OK")) {
 
-                   int KId = 0;
-                   System.out.println(""+KId+1);
+                    int KId = 0;
+                    System.out.println("" + KId + 1);
 
-                    //设置成功在10过期时间内返回数据库
+                    //查询数据库
                     pmsSkuInfo = RedisGetSkuId(skuId);
 
                     if (pmsSkuInfo != null) {
@@ -152,8 +149,8 @@ public class SkuServiceImpl implements SkuService {
                         // jedis.del("sku" + skuId + ":lock");
 
                         //使用lua脚本，查询的一瞬间删除
-                        String script ="if redis.call('get', KEYS[1]) == ARGV[1] then return redis.call('del', KEYS[1]) else return 0 end";
-                        jedis.eval(script, Collections.singletonList("sku" + skuId + ":lock"),Collections.singletonList(token));
+                        String script = "if redis.call('get', KEYS[1]) == ARGV[1] then return redis.call('del', KEYS[1]) else return 0 end";
+                        jedis.eval(script, Collections.singletonList("sku" + skuId + ":lock"), Collections.singletonList(token));
 
                     }
 
@@ -186,9 +183,16 @@ public class SkuServiceImpl implements SkuService {
     }
 
     @Override
-    public List<PmsSkuInfo> getAllSku() {
+    public List<PmsSkuInfo> getAllSku(String catalog3Id) {
 
-       List<PmsSkuInfo> pmsSkuInfoList =  pmsSkuInfoMapper.selectAll();
+        List<PmsSkuInfo> pmsSkuInfoList = pmsSkuInfoMapper.selectAll();
+
+        PmsSkuAttrValue pmsSkuAttrValue = new PmsSkuAttrValue();
+        for (PmsSkuInfo skuInfo : pmsSkuInfoList) {
+            pmsSkuAttrValue.setSkuId(skuInfo.getId());
+            List<PmsSkuAttrValue> skuAttrValueList = pmsSkuAttrValueMapper.select(pmsSkuAttrValue);
+            skuInfo.setSkuAttrValueList(skuAttrValueList);
+        }
 
         return pmsSkuInfoList;
     }

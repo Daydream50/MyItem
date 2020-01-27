@@ -6,7 +6,6 @@
         <option value="$PROJECT_DIR$/gmall-user/pom.xml" />
         <option value="$PROJECT_DIR$/gmall-parent/pom.xml" />
         <option value="$PROJECT_DIR$/gmall-api/pom.xml" />
-        <option value="$PROJECT_DIR$/gmall-user-service/pom.xml" />
         <option value="$PROJECT_DIR$/gmall-user-web/pom.xml" />
         <option value="$PROJECT_DIR$/gmall-web-util/pom.xml" />
         <option value="$PROJECT_DIR$/gmall-service-util/pom.xml" />
@@ -21,6 +20,12 @@
         <option value="$PROJECT_DIR$/Test/pom.xml" />
         <option value="$PROJECT_DIR$/gmall-search-web/pom.xml" />
         <option value="$PROJECT_DIR$/gmall-search-service/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall-cart-web/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall-cart-service/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall/passportweb/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall-passport-web/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall-user-service/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall-paren/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

@@ -1,5 +1,7 @@
 package com.yuan.gmall.bean;
 
+import org.hibernate.validator.constraints.NotEmpty;
+
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -12,8 +14,12 @@ public class UmsMember implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;
     private String memberLevelId;
+
+    @NotEmpty(message = "账号不能为空")
     private String username;
+    @NotEmpty(message = "密码不能为空")
     private String password;
+
     private String nickname;
     private String phone;
     private int status;
