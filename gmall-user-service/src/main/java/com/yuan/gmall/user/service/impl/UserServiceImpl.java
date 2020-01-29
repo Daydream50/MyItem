@@ -126,4 +126,19 @@ public class UserServiceImpl implements UserService {
 
 
     }
+
+    @Override
+    public UmsMember checkUser(String sourceUid) {
+        UmsMember umsMember = new UmsMember();
+        umsMember.setSourceUid(sourceUid);
+        UmsMember checkUser =  userMapper.selectOne(umsMember);
+        return checkUser;
+    }
+
+    @Override
+    public void addUser(UmsMember umsMember) {
+
+        userMapper.insertSelective(umsMember);
+
+    }
 }

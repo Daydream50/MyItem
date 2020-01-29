@@ -2,258 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01f2ba12-2c57-45ae-947d-784b13d5534f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/bean/OmsCartItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/service/CartService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-service/gmall-cart-service.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-service/src/main/java/com/yuan/gmall/GmallCartServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-service/src/main/java/com/yuan/gmall/cart/service/impl/CartServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-service/src/main/java/com/yuan/gmall/cart/service/mapper/CartItemMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/gmall-cart-web.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/java/com/yuan/gmall/GmallCartWebApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/bootstrap/js/jquery-3.1.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/css/One_bdyStyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/css/One_mainFoot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/css/font-awesome-4.7.0/HELP-US-OUT.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/css/font-awesome-4.7.0/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/css/font-awesome-4.7.0/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/css/font-awesome-4.7.0/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/css/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/css/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/css/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/css/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/css/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/css/font-awesome-4.7.0/less/animated.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/css/font-awesome-4.7.0/less/bordered-pulled.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/css/font-awesome-4.7.0/less/core.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/css/font-awesome-4.7.0/less/fixed-width.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/css/font-awesome-4.7.0/less/font-awesome.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/css/font-awesome-4.7.0/less/icons.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/css/font-awesome-4.7.0/less/larger.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/css/font-awesome-4.7.0/less/list.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/css/font-awesome-4.7.0/less/mixins.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/css/font-awesome-4.7.0/less/path.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/css/font-awesome-4.7.0/less/rotated-flipped.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/css/font-awesome-4.7.0/less/screen-reader.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/css/font-awesome-4.7.0/less/stacked.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/css/font-awesome-4.7.0/less/variables.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/css/font-awesome-4.7.0/scss/_animated.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/css/font-awesome-4.7.0/scss/_bordered-pulled.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/css/font-awesome-4.7.0/scss/_core.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/css/font-awesome-4.7.0/scss/_fixed-width.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/css/font-awesome-4.7.0/scss/_icons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/css/font-awesome-4.7.0/scss/_larger.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/css/font-awesome-4.7.0/scss/_list.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/css/font-awesome-4.7.0/scss/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/css/font-awesome-4.7.0/scss/_path.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/css/font-awesome-4.7.0/scss/_rotated-flipped.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/css/font-awesome-4.7.0/scss/_screen-reader.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/css/font-awesome-4.7.0/scss/_stacked.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/css/font-awesome-4.7.0/scss/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/css/font-awesome-4.7.0/scss/font-awesome.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/css/success.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/css/swiper.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/image/1fb04a3972bf9f4592bdb705fe497c08.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/image/57b191f2N15993cbb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/image/5874a54dNcec29924.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/image/5874a555Ne8192324.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/image/58ff269fN7b7e087b.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/image/59a51bf6Nb8e478cc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/image/59ae02fcN529cc4a1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/image/59ce706fN6f3f2a4a.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/image/5b0329eb8920f541b8b2cba483365577.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/image/8104b36ae6b72043ae838599d36d007d.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/image/a64b429ebf83d2459a0a73830f4ad4c4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/image/c0935b2c6504a5419e6ee507a5381bbe.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/image/header_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/image/header_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/DengluJd.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/QQ.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/add.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/buyNumleft.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/buyNumright.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/footer1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/footer10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/footer2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/footer3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/footer4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/footer5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/footer6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/footer7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/footer8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/footer9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/huangou.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/i.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/logo1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/loopShop.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/main_one1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/main_one2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/main_one3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/main_one4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/main_one5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/main_one6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/main_one7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/main_one8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/myshop_07.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/myshop_17.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/myshop_20.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/myshop_25.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/one_main1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/one_main10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/one_main11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/one_main12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/one_main2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/one_main3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/one_main4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/one_main5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/one_main6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/one_main7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/one_main8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/one_main9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/one_mian_gwc1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/one_mian_gwc2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/saoyisao.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/shop1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/shop2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/shop3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/shop4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/shop_07.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/上 箭头.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/上箭头red.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/下箭头.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/下箭头black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/京东支付.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/写.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/写作.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/包.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/头像.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/安全.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/微信.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/心04.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/思考.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/感叹三角形 (2).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/灯.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/猪.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/疑问.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/箭头fix.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/锁.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/错误.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/img/闪电.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/js/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/js/jquery-3.1.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/js/success.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/js/swiper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/static/success.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/templates/One_JDshop.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/templates/cartInner.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/templates/cartList.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/templates/toTrade.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-common-util/src/main/java/com/yuan/gmall/util/HttpclientUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-common-util/src/main/java/com/yuan/gmall/util/Md5Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-common-util/src/main/java/com/yuan/gmall/util/Md5Util.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-manage-service/src/main/resources/mapper/PmsBaseAttrInfoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-passport-web/src/main/java/com/yuan/gmall/passport/controller/PassportController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-passport-web/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-passport-web/src/main/resources/static/css/gm1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-passport-web/src/main/resources/static/css/gm1.css.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-passport-web/src/main/resources/static/img/4de5019d2404d347897dee637895d02b_06.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-passport-web/src/main/resources/static/img/4de5019d2404d347897dee637895d02b_11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-passport-web/src/main/resources/static/img/4de5019d2404d347897dee637895d02b_15.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-passport-web/src/main/resources/static/img/4de5019d2404d347897dee637895d02b_17.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-passport-web/src/main/resources/static/img/4de5019d2404d347897dee637895d02b_19.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-passport-web/src/main/resources/static/img/4de5019d2404d347897dee637895d02b_25.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-passport-web/src/main/resources/static/img/5731485aN1134b4f0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-passport-web/src/main/resources/static/img/a65a18e877a16246a92e1b755bd88a03_03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-passport-web/src/main/resources/static/img/a65a18e877a16246a92e1b755bd88a03_06.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-passport-web/src/main/resources/static/img/f760f80838eafa4ba85463ce6ce1298d_03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-passport-web/src/main/resources/static/img/grow1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-passport-web/src/main/resources/static/img/grow2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-passport-web/src/main/resources/static/img/img11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-passport-web/src/main/resources/static/img/img22.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-passport-web/src/main/resources/static/img/logo1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-passport-web/src/main/resources/static/img/phone-orange.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-passport-web/src/main/resources/static/img/pwd-icons-new.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-passport-web/src/main/resources/static/img/qq.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-passport-web/src/main/resources/static/img/show.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-passport-web/src/main/resources/static/img/user_03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-passport-web/src/main/resources/static/img/user_06.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-passport-web/src/main/resources/static/img/weixin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-passport-web/src/main/resources/static/js/jquery-3.1.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-passport-web/src/main/resources/static/js/zepto.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-passport-web/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-web-util/src/main/java/com/yuan/gmall/annotations/LoginRequired.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-web-util/src/main/java/com/yuan/gmall/config/WebMvcConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-web-util/src/main/java/com/yuan/gmall/interceptors/AuthInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-web-util/src/main/java/com/yuan/gmall/util/CookieUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-web-util/src/main/java/com/yuan/gmall/util/JwtUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gmall-passport-web/src/main/java/com/yuan/gmall/passport/controller/OAuth2Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/我不上传.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/axis.log" beforeDir="false" afterPath="$PROJECT_DIR$/axis.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/bean/PmsSearchParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/bean/PmsSearchParam.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/bean/UmsMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/bean/UmsMember.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/service/AttrService.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/service/AttrService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/service/CatalogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/service/CatalogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/service/SearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/service/SearchService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/service/SkuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/service/SkuService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/service/SpuListService.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/service/SpuListService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-api/target/classes/com/yuan/gmall/bean/UmsMember.class" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-api/target/classes/com/yuan/gmall/bean/UmsMember.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-api/target/classes/com/yuan/gmall/service/AttrService.class" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-api/target/classes/com/yuan/gmall/service/AttrService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-api/target/classes/com/yuan/gmall/service/SkuService.class" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-api/target/classes/com/yuan/gmall/service/SkuService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-api/target/classes/com/yuan/gmall/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-api/target/classes/com/yuan/gmall/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-item-web/src/main/resources/static/js/js.js" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-item-web/src/main/resources/static/js/js.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-item-web/src/main/resources/templates/item.html" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-item-web/src/main/resources/templates/item.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-manage-service/src/main/java/com/yuan/gmall/GmallManageServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-manage-service/src/main/java/com/yuan/gmall/GmallManageServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-manage-service/src/main/java/com/yuan/gmall/manage/mapper/PmsBaseAttrInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-manage-service/src/main/java/com/yuan/gmall/manage/mapper/PmsBaseAttrInfoMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-manage-service/src/main/java/com/yuan/gmall/manage/service/impl/AttrServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-manage-service/src/main/java/com/yuan/gmall/manage/service/impl/AttrServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-manage-service/src/main/java/com/yuan/gmall/manage/service/impl/SkuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-manage-service/src/main/java/com/yuan/gmall/manage/service/impl/SkuServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gmall-manage-web/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-manage-web/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-parent/gmall-parent.iml" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-parent/gmall-parent.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-search-service/src/main/java/com/yuan/gmall/search/service/impl/SearchServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-search-service/src/main/java/com/yuan/gmall/search/service/impl/SearchServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-search-service/src/test/java/com/yuan/gmall/search/GmallSearchServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-search-service/src/test/java/com/yuan/gmall/search/GmallSearchServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-search-web/src/main/java/com/yuan/gmall/search/GmallSearchWebApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-search-web/src/main/java/com/yuan/gmall/GmallSearchWebApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-search-web/src/main/java/com/yuan/gmall/search/controller/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-search-web/src/main/java/com/yuan/gmall/search/controller/SearchController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-search-web/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-search-web/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-service-user/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-user-service/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-service-user/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-user-service/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-service-user/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-user-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-service-user/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-user-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-service-user/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-user-service/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-service-user/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-user-service/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-service-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-user-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-service-user/src/main/java/com/yuan/gmall/user/GmallServiceUserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-user-service/src/main/java/com/yuan/gmall/GmallServiceUserApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-service-user/src/main/java/com/yuan/gmall/user/mapper/UmsMemberReceiveAddressMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-user-service/src/main/java/com/yuan/gmall/user/mapper/UmsMemberReceiveAddressMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-service-user/src/main/java/com/yuan/gmall/user/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-user-service/src/main/java/com/yuan/gmall/user/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-service-user/src/main/java/com/yuan/gmall/user/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-user-service/src/main/java/com/yuan/gmall/user/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-service-user/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-user-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-service-user/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-user-service/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-service-user/src/test/java/com/yuan/gmall/user/GmallServiceUserApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-user-service/src/test/java/com/yuan/gmall/user/GmallServiceUserApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-service-util/gmall-service-util.iml" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-service-util/gmall-service-util.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-service-util/target/classes/META-INF/gmall-service-util.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-user-service/src/main/resources/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-user-web/src/main/java/com/yuan/gmall/user/conrtoller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-user-web/src/main/java/com/yuan/gmall/user/conrtoller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-user/src/main/java/com/yuan/gmall/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-user/src/main/java/com/yuan/gmall/user/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-user/src/main/java/com/yuan/gmall/user/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-user/src/main/java/com/yuan/gmall/user/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-web-util/gmall-web-util.iml" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-web-util/gmall-web-util.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-web-util/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-web-util/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gmall-passport-web/src/main/java/com/yuan/gmall/passport/controller/PassportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-passport-web/src/main/java/com/yuan/gmall/passport/controller/PassportController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gmall-passport-web/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-passport-web/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gmall-passport-web/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-passport-web/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gmall-service-user/src/main/resources/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gmall-user-service/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-user-service/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gmall-user-service/src/main/java/com/yuan/gmall/user/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-user-service/src/main/java/com/yuan/gmall/user/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gmall-web-util/src/main/java/com/yuan/gmall/interceptors/AuthInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-web-util/src/main/java/com/yuan/gmall/interceptors/AuthInterceptor.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/fastdfs-client-java/target/" />
@@ -315,13 +77,58 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gmall-passport-web/src/main/java/com/yuan/gmall/passport/controller/PassportController.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gmall-passport-web/src/main/java/com/yuan/gmall/passport/controller/OAuth2Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="637">
+              <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gmall-passport-web/src/main/java/com/yuan/gmall/passport/controller/PassportController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-24">
+              <caret line="151" column="29" selection-start-line="151" selection-start-column="29" selection-end-line="151" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/我不上传.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="3" selection-start-column="3" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gmall-user-service/src/main/java/com/yuan/gmall/user/service/impl/UserServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="424">
+              <caret line="143" column="1" lean-forward="true" selection-start-line="143" selection-start-column="1" selection-end-line="143" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/bean/UmsMember.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding>
+                <element signature="e#3211#3212#0" expanded="true" />
+                <element signature="e#3244#3245#0" expanded="true" />
+                <element signature="e#3296#3297#0" expanded="true" />
+                <element signature="e#3340#3341#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -341,7 +148,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>addToCart</find>
       <find>font-weight:bold</find>
       <find>gmall-user</find>
       <find>登录</find>
@@ -371,6 +177,7 @@
       <find>StringUtils</find>
       <find>spring.datasource.url=</find>
       <find>redisUtil;</find>
+      <find>addUser</find>
     </findStrings>
     <replaceStrings>
       <replace>com.yuangmall</replace>
@@ -396,15 +203,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/gmall-parent-web/pom.xml" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/gmall-passport-web/src/test/java/com/yuan/gmall/passport/GmallPassportWebApplicationTests.java" />
         <option value="$PROJECT_DIR$/gmall-passport-web/src/main/java/com/yuan/gmall/GmallPassportWebApplication.java" />
         <option value="$PROJECT_DIR$/gmall-cart-web/src/main/resources/templates/toTrade.html" />
         <option value="$PROJECT_DIR$/gmall-web-util/src/main/java/com/yuan/gmall/annotations/AuthInterceptor.java" />
         <option value="$PROJECT_DIR$/gmall-web-util/src/main/java/com/yuan/gmall/util/CookieUtil.java" />
         <option value="$PROJECT_DIR$/gmall-search-web/src/main/resources/templates/index.html" />
-        <option value="$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/bean/UmsMember.java" />
         <option value="$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/bean/ArgumentInvalidResult.java" />
         <option value="$PROJECT_DIR$/gmall-common-util/src/main/java/com/yuan/gmall/util/errorUtil/Response.java" />
         <option value="$PROJECT_DIR$/gmall-common-util/src/main/java/com/yuan/gmall/util/errorUtil/GlobalExceptionInterceptor.java" />
@@ -425,7 +228,6 @@
         <option value="$PROJECT_DIR$/gmall-service-user/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/gmall-service-user/pom.xml" />
         <option value="$PROJECT_DIR$/gmall-cart-service/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/gmall-manage-web/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/gmall-web-util/src/main/java/com/yuan/gmall/config/WebMvcConfiguration.java" />
         <option value="$PROJECT_DIR$/gmall-user-service/pom.xml" />
         <option value="$PROJECT_DIR$/gmall-user-service/src/main/java/com/atguigu/gmall/user/service/impl/UserServiceImpl.java" />
@@ -437,16 +239,21 @@
         <option value="$PROJECT_DIR$/gmall-user-service/src/main/java/com/yuan/gmall/user/GmallServiceUserApplication.java" />
         <option value="$PROJECT_DIR$/gmall-user-service/src/main/java/com/yuan/gmall/GmallServiceUserApplication.java" />
         <option value="$PROJECT_DIR$/gmall-manage-service/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/gmall-passport-web/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/gmall-user-service/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/gmall-web-util/src/main/java/com/yuan/gmall/util/JwtUtil.java" />
+        <option value="$PROJECT_DIR$/gmall-passport-web/src/main/java/com/yuan/gmall/passport/GmallPassportWebApplication.java" />
+        <option value="$PROJECT_DIR$/gmall-cart-web/src/main/java/com/yuan/gmall/cart/controller/CartController.java" />
+        <option value="$PROJECT_DIR$/gmall-web-util/src/main/java/com/yuan/gmall/interceptors/AuthInterceptor.java" />
+        <option value="$PROJECT_DIR$/gmall-passport-web/src/main/java/com/yuan/gmall/passport/controller/OAuth2Test.java" />
+        <option value="$PROJECT_DIR$/gmall-manage-web/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/gmall-passport-web/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/gmall-cart-web/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/gmall-passport-web/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/service/UserService.java" />
         <option value="$PROJECT_DIR$/gmall-user-service/src/main/java/com/yuan/gmall/user/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/gmall-passport-web/src/main/java/com/yuan/gmall/passport/GmallPassportWebApplication.java" />
-        <option value="$PROJECT_DIR$/gmall-passport-web/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/bean/UmsMember.java" />
         <option value="$PROJECT_DIR$/gmall-passport-web/src/main/java/com/yuan/gmall/passport/controller/PassportController.java" />
-        <option value="$PROJECT_DIR$/gmall-web-util/src/main/java/com/yuan/gmall/interceptors/AuthInterceptor.java" />
-        <option value="$PROJECT_DIR$/gmall-cart-web/src/main/java/com/yuan/gmall/cart/controller/CartController.java" />
+        <option value="$PROJECT_DIR$/我不上传.txt" />
       </list>
     </option>
   </component>
@@ -500,9 +307,10 @@
     <option name="jreName" value="1.8" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-5" />
-    <option name="width" value="650" />
-    <option name="height" value="705" />
+    <option name="x" value="170" />
+    <option name="y" value="168" />
+    <option name="width" value="1783" />
+    <option name="height" value="975" />
   </component>
   <component name="ProjectId" id="1UvjHzbPY1NsnrLgY05DZo049hS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -528,51 +336,6 @@
             <path>
               <item name="fastdfs-client-java" type="b2602c69:ProjectViewProjectNode" />
               <item name="MyItem" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fastdfs-client-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyItem" type="462c0819:PsiDirectoryNode" />
-              <item name="gmall-passport-web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fastdfs-client-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyItem" type="462c0819:PsiDirectoryNode" />
-              <item name="gmall-passport-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fastdfs-client-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyItem" type="462c0819:PsiDirectoryNode" />
-              <item name="gmall-passport-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fastdfs-client-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyItem" type="462c0819:PsiDirectoryNode" />
-              <item name="gmall-passport-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fastdfs-client-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyItem" type="462c0819:PsiDirectoryNode" />
-              <item name="gmall-passport-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="passport" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fastdfs-client-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyItem" type="462c0819:PsiDirectoryNode" />
-              <item name="gmall-passport-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="passport" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -617,7 +380,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.25632185" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="debugger.dataViews" />
     <property name="show.run.dashboard.notification" value="false" />
   </component>
   <component name="RecentsManager">
@@ -668,7 +431,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GmallCartWebApplication">
+  <component name="RunManager" selected="Spring Boot.GmallSearchWebApplication">
     <configuration name="Md5Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.yuan.gmall.util.Md5Test" />
       <module name="gmall-common-util" />
@@ -682,17 +445,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GmallSearchServiceApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="gmall-search-service" />
+    <configuration name="OAuth2Test.VloginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gmall-passport-web" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yuan.gmall.*" />
+          <option name="PATTERN" value="com.yuan.gmall.passport.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.yuan.gmall.search" />
-      <option name="MAIN_CLASS_NAME" value="com.yuan.gmall.search.GmallSearchServiceApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="PACKAGE_NAME" value="com.yuan.gmall.passport.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.yuan.gmall.passport.controller.OAuth2Test" />
+      <option name="METHOD_NAME" value="VloginTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -804,7 +567,7 @@
     </configuration>
     <list>
       <item itemvalue="Application.Md5Test" />
-      <item itemvalue="JUnit.GmallSearchServiceApplicationTests.contextLoads" />
+      <item itemvalue="JUnit.OAuth2Test.VloginTest" />
       <item itemvalue="Spring Boot.ItemWebApplication" />
       <item itemvalue="Spring Boot.GmallManageServiceApplication" />
       <item itemvalue="Spring Boot.GmallManageWebApplication" />
@@ -819,11 +582,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.GmallCartWebApplication" />
         <item itemvalue="Spring Boot.GmallServiceUserApplication" />
+        <item itemvalue="JUnit.OAuth2Test.VloginTest" />
+        <item itemvalue="Spring Boot.GmallCartWebApplication" />
         <item itemvalue="Spring Boot.GmallCartServiceApplication" />
         <item itemvalue="Application.Md5Test" />
-        <item itemvalue="JUnit.GmallSearchServiceApplicationTests.contextLoads" />
       </list>
     </recent_temporary>
   </component>
@@ -983,7 +746,10 @@
       <workItem from="1580034004826" duration="3839000" />
       <workItem from="1580039212953" duration="1501000" />
       <workItem from="1580048455337" duration="3698000" />
-      <workItem from="1580086574237" duration="6959000" />
+      <workItem from="1580086574237" duration="10157000" />
+      <workItem from="1580119891838" duration="5487000" />
+      <workItem from="1580177845145" duration="597000" />
+      <workItem from="1580270394203" duration="9941000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1576244087731</created>
@@ -1055,43 +821,50 @@
       <option name="project" value="LOCAL" />
       <updated>1579258591464</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="登陆完成">
+      <created>1580102456776</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1580102456776</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GmallSearchServiceApplicationTests_put - 2020.01.17 at 16h 51m 13s.xml">
-      <configuration name="GmallSearchServiceApplicationTests.put" configurationId="JUnit" />
+    <history-entry file="OAuth2Test_VloginTest - 2020.01.27 at 23h 33m 55s.xml">
+      <configuration name="OAuth2Test.VloginTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GmallSearchServiceApplicationTests_contextLoads - 2020.01.17 at 16h 52m 25s.xml">
-      <configuration name="GmallSearchServiceApplicationTests.contextLoads" configurationId="JUnit" />
+    <history-entry file="OAuth2Test_VloginTest - 2020.01.27 at 23h 40m 02s.xml">
+      <configuration name="OAuth2Test.VloginTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GmallSearchServiceApplicationTests_get - 2020.01.17 at 16h 52m 44s.xml">
-      <configuration name="GmallSearchServiceApplicationTests.get" configurationId="JUnit" />
+    <history-entry file="OAuth2Test_VloginTest - 2020.01.27 at 23h 40m 15s.xml">
+      <configuration name="OAuth2Test.VloginTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GmallSearchServiceApplicationTests_contextLoads - 2020.01.17 at 17h 04m 26s.xml">
-      <configuration name="GmallSearchServiceApplicationTests.contextLoads" configurationId="JUnit" />
+    <history-entry file="OAuth2Test_VloginTest - 2020.01.27 at 23h 42m 20s.xml">
+      <configuration name="OAuth2Test.VloginTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GmallSearchServiceApplicationTests_contextLoads - 2020.01.18 at 11h 28m 24s.xml">
-      <configuration name="GmallSearchServiceApplicationTests.contextLoads" configurationId="JUnit" />
+    <history-entry file="OAuth2Test_VloginTest - 2020.01.27 at 23h 42m 59s.xml">
+      <configuration name="OAuth2Test.VloginTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GmallSearchServiceApplicationTests_put - 2020.01.18 at 12h 01m 39s.xml">
-      <configuration name="GmallSearchServiceApplicationTests.put" configurationId="JUnit" />
+    <history-entry file="OAuth2Test_VloginTest - 2020.01.27 at 23h 45m 11s.xml">
+      <configuration name="OAuth2Test.VloginTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GmallSearchServiceApplicationTests_contextLoads - 2020.01.18 at 12h 02m 03s.xml">
-      <configuration name="GmallSearchServiceApplicationTests.contextLoads" configurationId="JUnit" />
+    <history-entry file="OAuth2Test_VloginTest - 2020.01.27 at 23h 45m 40s.xml">
+      <configuration name="OAuth2Test.VloginTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GmallSearchServiceApplicationTests_contextLoads - 2020.01.18 at 12h 02m 25s.xml">
-      <configuration name="GmallSearchServiceApplicationTests.contextLoads" configurationId="JUnit" />
+    <history-entry file="OAuth2Test_VloginTest - 2020.01.27 at 23h 47m 19s.xml">
+      <configuration name="OAuth2Test.VloginTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GmallSearchServiceApplicationTests_contextLoads - 2020.01.18 at 12h 34m 51s.xml">
-      <configuration name="GmallSearchServiceApplicationTests.contextLoads" configurationId="JUnit" />
+    <history-entry file="OAuth2Test_VloginTest - 2020.01.27 at 23h 48m 41s.xml">
+      <configuration name="OAuth2Test.VloginTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GmallSearchServiceApplicationTests_contextLoads - 2020.01.18 at 12h 37m 45s.xml">
-      <configuration name="GmallSearchServiceApplicationTests.contextLoads" configurationId="JUnit" />
+    <history-entry file="OAuth2Test_VloginTest - 2020.01.27 at 23h 49m 37s.xml">
+      <configuration name="OAuth2Test.VloginTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="201954000" />
+    <option name="totallyTimeSpent" value="221177000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1106,7 +879,7 @@
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49825174" visible="true" weight="0.17537314" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49825174" visible="true" weight="0.18603411" />
       <window_info id="Structure" order="1" sideWeight="0.50174826" side_tool="true" weight="0.23686337" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1116,8 +889,8 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32832617" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.6909871" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.9291045" weight="0.42596567" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.6212446" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.9291045" weight="0.35944206" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32939914" />
@@ -1186,7 +959,8 @@
     <MESSAGE value="后台完成" />
     <MESSAGE value="jedis" />
     <MESSAGE value="搜索框完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="搜索框完成" />
+    <MESSAGE value="登陆完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="登陆完成" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="183" key="#Inspections" timestamp="1576315715529">
@@ -1432,33 +1206,15 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/gmall-user-service/src/main/java/com/yuan/gmall/user/service/impl/UserServiceImpl.java</url>
-          <line>108</line>
+          <line>132</line>
           <properties />
-          <option name="timeStamp" value="147" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/gmall-web-util/src/main/java/com/yuan/gmall/interceptors/AuthInterceptor.java</url>
-          <line>29</line>
-          <properties />
-          <option name="timeStamp" value="148" />
+          <option name="timeStamp" value="171" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/gmall-passport-web/src/main/java/com/yuan/gmall/passport/controller/PassportController.java</url>
-          <line>91</line>
+          <line>153</line>
           <properties />
-          <option name="timeStamp" value="149" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/gmall-passport-web/src/main/java/com/yuan/gmall/passport/controller/PassportController.java</url>
-          <line>35</line>
-          <properties />
-          <option name="timeStamp" value="158" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/gmall-web-util/src/main/java/com/yuan/gmall/interceptors/AuthInterceptor.java</url>
-          <line>105</line>
-          <properties />
-          <option name="timeStamp" value="159" />
+          <option name="timeStamp" value="173" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1471,68 +1227,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/service/SearchService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/service/CatalogService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-manage-service/src/main/java/com/yuan/gmall/manage/service/impl/CatalogServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
-          <folding>
-            <element signature="e#866#867#0" expanded="true" />
-            <element signature="e#922#923#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/service/CartService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/service/AttrService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-cart-service/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="6" selection-start-column="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-manage-web/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-web-util/src/main/java/com/yuan/gmall/config/WebMvcConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-user-service/src/main/java/com/atguigu/gmall/user/service/impl/UserServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/gmall-user-service/src/main/java/com/atguigu/gmall/user/mapper/UmsMemberReceiveAddressMapper.java" />
     <entry file="file://$PROJECT_DIR$/gmall-passport-web/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-210">
@@ -1601,13 +1295,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-passport-web/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gmall-service-util/src/main/java/com/yuan/gmall/util/RedisUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -1625,13 +1312,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/bean/UmsMember.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gmall-manage-service/src/main/java/com/yuan/gmall/manage/service/impl/SkuServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1239">
@@ -1646,13 +1326,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/dubbo/2.6.0/dubbo-2.6.0.jar!/com/alibaba/dubbo/rpc/proxy/AbstractProxyInvoker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
         </state>
       </provider>
     </entry>
@@ -1708,44 +1381,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="24" column="8" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-passport-web/src/main/java/com/yuan/gmall/passport/GmallPassportWebApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#273#274#0" expanded="true" />
-            <element signature="e#342#343#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-web-util/src/main/java/com/yuan/gmall/util/JwtUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="16" column="44" lean-forward="true" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/dubbo/2.6.0/dubbo-2.6.0.jar!/com/alibaba/dubbo/rpc/proxy/javassist/JavassistProxyFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-126">
-          <folding>
-            <element signature="e#0#1298#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.24.RELEASE/spring-webmvc-4.3.24.RELEASE.jar!/org/springframework/web/servlet/HandlerExecutionChain.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -1777,13 +1412,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.24.RELEASE/spring-web-4.3.24.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="117" selection-start-line="117" selection-end-line="117" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.40/tomcat-embed-core-8.5.40.jar!/javax/servlet/http/HttpServlet.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
@@ -1798,47 +1426,189 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-web-util/src/main/java/com/yuan/gmall/util/CookieUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="51" column="54" lean-forward="true" selection-start-line="51" selection-start-column="54" selection-end-line="51" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-cart-web/src/main/java/com/yuan/gmall/cart/controller/CartController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-web-util/src/main/java/com/yuan/gmall/interceptors/AuthInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1785">
+          <caret line="97" column="25" selection-start-line="97" selection-start-column="15" selection-end-line="97" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="327" selection-start-line="327" selection-end-line="327" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-manage-web/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-passport-web/src/main/java/com/yuan/gmall/passport/GmallPassportWebApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-cart-web/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="21" selection-start-line="21" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/net/DualStackPlainSocketImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="282" column="22" selection-start-line="282" selection-start-column="22" selection-end-line="282" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="300" column="30" selection-start-line="300" selection-start-column="30" selection-end-line="300" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-passport-web/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/gmall-passport-web/src/main/resources/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="85" column="38" selection-start-line="85" selection-start-column="38" selection-end-line="85" selection-end-column="38" />
+        <state relative-caret-position="135">
+          <caret line="53" column="174" selection-start-line="53" selection-start-column="174" selection-end-line="53" selection-end-column="174" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-user-service/src/main/java/com/yuan/gmall/user/service/impl/UserServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/gmall-web-util/src/main/java/com/yuan/gmall/util/JwtUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="108" selection-start-line="108" selection-end-line="108" />
+        <state relative-caret-position="126">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-web-util/src/main/java/com/yuan/gmall/interceptors/AuthInterceptor.java">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/dubbo/2.6.0/dubbo-2.6.0.jar!/com/alibaba/dubbo/rpc/proxy/AbstractProxyInvoker.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="62" column="13" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
+        <state relative-caret-position="137">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/dubbo/2.6.0/dubbo-2.6.0.jar!/com/alibaba/dubbo/rpc/proxy/javassist/JavassistProxyFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-passport-web/src/main/java/com/yuan/gmall/passport/controller/OAuth2Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="637">
+          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-cart-web/src/main/java/com/yuan/gmall/cart/controller/CartController.java">
+    <entry file="file://$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1407">
-          <caret line="103" column="5" lean-forward="true" selection-start-line="103" selection-start-column="5" selection-end-line="103" selection-end-column="5" />
+        <state relative-caret-position="588">
+          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.24.RELEASE/spring-web-4.3.24.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="123" selection-start-line="123" selection-end-line="123" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/bean/UmsMember.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="e#3211#3212#0" expanded="true" />
+            <element signature="e#3244#3245#0" expanded="true" />
+            <element signature="e#3296#3297#0" expanded="true" />
+            <element signature="e#3340#3341#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmall-user-service/src/main/java/com/yuan/gmall/user/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="143" column="1" lean-forward="true" selection-start-line="143" selection-start-column="1" selection-end-line="143" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gmall-passport-web/src/main/java/com/yuan/gmall/passport/controller/PassportController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="-24">
+          <caret line="151" column="29" selection-start-line="151" selection-start-column="29" selection-end-line="151" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/我不上传.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="3" selection-start-column="3" selection-end-column="3" />
         </state>
       </provider>
     </entry>

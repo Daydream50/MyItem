@@ -81,10 +81,6 @@ public class AuthInterceptor extends HandlerInterceptorAdapter {
             // 需要将token携带的用户信息写入
             request.setAttribute("memberId", successMap.get("memberId"));
             request.setAttribute("nickname", successMap.get("nickname"));
-            //验证通过，覆盖cookie中的token
-            if (StringUtils.isNotBlank(token)) {
-                CookieUtil.setCookie(request, response, "oldToken", token, 60 * 60 * 2, true);
-            }
 
 
         } else {

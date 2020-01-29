@@ -23,4 +23,8 @@ public interface UserService {
     UmsMember login(UmsMember umsMember);
 
     void addUserToken(String token, String id);
+
+    UmsMember checkUser(String sourceUid);
+
+    void addUser(UmsMember umsMember);
 }
