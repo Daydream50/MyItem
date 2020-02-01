@@ -26,6 +26,9 @@
         <option value="$PROJECT_DIR$/gmall-passport-web/pom.xml" />
         <option value="$PROJECT_DIR$/gmall-user-service/pom.xml" />
         <option value="$PROJECT_DIR$/gmall-paren/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall-order-web/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall/order/service/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall-order-service/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

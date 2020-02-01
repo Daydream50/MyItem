@@ -54,11 +54,15 @@ public class CartServiceImpl implements CartService {
     @Override
     public void updateCart(OmsCartItem cartItem) {
 
+
         if (StringUtils.isNotBlank(cartItem.getMemberId())) { //用户id不能为空
+
             Example e = new Example(OmsCartItem.class);
-            e.createCriteria().andEqualTo("id", cartItem.getId()); //根据主键更新
+            e.createCriteria().andEqualTo("productSkuId", cartItem.getProductSkuId()); //根据主键更新
 
             cartItemMapper.updateByExampleSelective(cartItem, e);
+
+            flushCartCache(cartItem.getMemberId());
         }
     }
 

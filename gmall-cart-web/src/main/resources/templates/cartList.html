@@ -147,7 +147,7 @@
 <script type="text/javascript">
 
      function toTrade(){
-         window.location.href="http://cart.gmall.com:8085/toTrade";
+         window.location.href="http://order.gmall.com:8087/toTrade";
     }
     function toItem(skuId) {
         window.location.href="http://item.gmall.com:8083/"+skuId+".html";
@@ -155,7 +155,7 @@
 
     function login(){
       var s = encodeURIComponent("http://cart.gmall.com:8085/cartList");
-       window.location.href="http://passport.gmall.com/index?originUrl="+s;
+       window.location.href="http://passport.gmall.com/index?ReturnUrl="+s;
     }
 
     function checkSku( chkbox){

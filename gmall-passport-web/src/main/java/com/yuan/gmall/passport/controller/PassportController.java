@@ -37,8 +37,8 @@ public class PassportController {
 
         if(decode != null){
             map.put("status","success");
-            map.put("memberId",(String)decode.get("memberId"));
-            map.put("nickname",(String)decode.get("nickname"));
+            map.put("memberId",(String)decode.get("Id"));
+            map.put("nickname",(String)decode.get("Nickname"));
         }else {
             map.put("success","fail");
         }
@@ -91,7 +91,7 @@ public class PassportController {
         }
 
 
-        return "redirect:http://search.gmall.com:8084/index?token="+token;
+        return token;
     }
 
     @RequestMapping(path = "index")
@@ -168,7 +168,7 @@ public class PassportController {
                 }
 
                 Map<String,Object> userMap = new HashMap<>();
-                userMap.put("Id", umsMember.getSourceUid());
+                userMap.put("memberId", umsMember.getSourceUid());
                 userMap.put("Nickname", umsMember.getNickname());
                 //用jwt加密获得token
                 token = JwtUtil.encode("2020-01-26yuan", userMap, ip);
