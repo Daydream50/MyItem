@@ -4573,7 +4573,7 @@ function getAll( context, tag ) {
 }
 
 
-// Mark scripts as having already been evaluated
+// Mark scripts as having already been evated
 function setGlobalEval( elems, refElements ) {
 	var elem,
 		i = 0;
@@ -4707,7 +4707,7 @@ function buildFragment( elems, context, scripts, selection, ignored ) {
 		// Append to fragment
 		tmp = getAll( safe.appendChild( elem ), "script" );
 
-		// Preserve script evaluation history
+		// Preserve script evation history
 		if ( contains ) {
 			setGlobalEval( tmp );
 		}
@@ -5960,7 +5960,7 @@ function fixCloneNodeIssues( src, dest ) {
 		dest.removeAttribute( jQuery.expando );
 	}
 
-	// IE blanks contents when cloning scripts, and tries to evaluate newly-set text
+	// IE blanks contents when cloning scripts, and tries to evate newly-set text
 	if ( nodeName === "script" && dest.text !== src.text ) {
 		disableScript( dest ).text = src.text;
 		restoreScript( dest );

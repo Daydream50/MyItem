@@ -27,4 +27,8 @@ public interface UserService {
     UmsMember checkUser(String sourceUid);
 
     void addUser(UmsMember umsMember);
+
+    List<UmsMemberReceiveAddress> selectAddress(String memberId);
+
+    UmsMemberReceiveAddress getReceiveAddressById(String receiveAddressId);
 }

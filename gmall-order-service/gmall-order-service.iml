@@ -47,7 +47,7 @@
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.8.11.3" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.8.0" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.8.11" level="project" />
-    <orderEntry type="library" name="Maven: org.jetbrains:annotations:18.0.0" level="project" />
+    <orderEntry type="library" name="Maven: org.jetbrains:annotations:19.0.0" level="project" />
     <orderEntry type="module" module-name="gmall-common-util" />
     <orderEntry type="library" name="Maven: com.alibaba:dubbo:2.6.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context:4.3.24.RELEASE" level="project" />

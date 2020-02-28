@@ -6,33 +6,30 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="gmall-order-web" />
-        <module name="item-web" />
-        <module name="gmall-item-web" />
+        <module name="gmall-web-util" />
+        <module name="gmall-search-web" />
         <module name="gmall-common-util" />
+        <module name="payment" />
         <module name="gmall-manage-web" />
         <module name="gmall-manage-service" />
         <module name="gmall-order-service" />
         <module name="fastdfs-client-java" />
         <module name="gmall-cart-service" />
         <module name="gmall-api" />
-        <module name="fastdfs-client-java (1)" />
-        <module name="gmall-user-web" />
-        <module name="Test" />
+        <module name="gmall-order-web" />
         <module name="gmall-cart-web" />
+        <module name="gmall-payment" />
         <module name="gmall-user-service" />
         <module name="gmall-passport-web" />
-        <module name="gmall-search-service" />
-        <module name="gmall-web-util" />
-        <module name="gmall-user" />
-        <module name="gmall-search-web" />
-        <module name="passportweb" />
         <module name="gmall-service-util" />
+        <module name="gmall-search-service" />
+        <module name="gmall-user-web" />
+        <module name="gmall-user" />
+        <module name="gmall-item-web" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="8">
+    <bytecodeTargetLevel>
       <module name="fastdfs-client-java" target="1.6" />
-      <module name="fastdfs-client-java (1)" target="8" />
       <module name="gmall-api" target="1.8" />
       <module name="gmall-cart-service" target="1.8" />
       <module name="gmall-cart-web" target="1.8" />
@@ -44,6 +41,7 @@
       <module name="gmall-order-web" target="1.8" />
       <module name="gmall-parent" target="1.8" />
       <module name="gmall-passport-web" target="1.8" />
+      <module name="gmall-payment" target="1.8" />
       <module name="gmall-search-service" target="1.8" />
       <module name="gmall-search-web" target="1.8" />
       <module name="gmall-service-util" target="1.8" />
@@ -51,21 +49,7 @@
       <module name="gmall-user-service" target="1.8" />
       <module name="gmall-user-web" target="1.8" />
       <module name="gmall-web-util" target="1.8" />
-      <module name="item-web" target="8" />
-      <module name="passportweb" target="8" />
-      <module name="Test" target="8" />
+      <module name="payment" target="1.8" />
     </bytecodeTargetLevel>
-  </component>
-  <component name="JavacSettings">
-    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="gmall-item-web" options="" />
-      <module name="gmall-manage-service" options="" />
-      <module name="gmall-manage-web" options="" />
-      <module name="gmall-order-web" options="" />
-      <module name="gmall-user" options="" />
-      <module name="gmall-user-service" options="" />
-      <module name="gmall-user-web" options="" />
-      <module name="item-web" options="-parameters" />
-    </option>
   </component>
 </project>

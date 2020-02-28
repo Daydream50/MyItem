@@ -1,338 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/gmall-cart-web/src/main/resources/templates/cartList.html" line="149" mnemonic="9" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="01f2ba12-2c57-45ae-947d-784b13d5534f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/bean/OmsOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/bean/OmsOrderItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-service/gmall-order-service.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-service/src/main/java/com/yuan/gmall/GmallOrderServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-service/src/main/java/com/yuan/gmall/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/java/com/yuan/gmall/order/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/css/JD2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/css/list.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/04.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/05.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/06.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/07.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/08.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/09.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/1fb04a3972bf9f4592bdb705fe497c08.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/1xb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/1xb1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/2xb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/2xb1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/3xb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/3xb1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/54b8871eNa9a7067e.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/54b8872dNe37a9860.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/54b8875fNad1e0c4c.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/5698dc03N23f2e3b8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/5698dc16Nb2ab99df.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/56a89b8fNfbaade9a.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/57b191f2N15993cbb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/5874a54dNcec29924.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/5874a555Ne8192324.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/58ff269fN7b7e087b.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/59126ae3N1b306e2c.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/59a3ca01Nc53707d5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/59a51bf6Nb8e478cc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/59ae02fcN529cc4a1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/59ce706fN6f3f2a4a.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/5b0329eb8920f541b8b2cba483365577.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/8104b36ae6b72043ae838599d36d007d.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/BAITIAO_2.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/CMB.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/XJKCONSUME.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/a64b429ebf83d2459a0a73830f4ad4c4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/bu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/bu1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/bu2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/bu3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/c0935b2c6504a5419e6ee507a5381bbe.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/car.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/cen.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/datu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/datu1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/ding.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/ding1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/ding2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/ding3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/ding4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/foots.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/header_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/header_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/i_03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/i_07.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/i_11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/i_14.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/ico_footer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/icon (1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/im_03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/im_06.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/im_11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/jd2015img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/live.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/live1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/live2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/live3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/logo1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/logo2018.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/logo_2017.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/new.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/order-icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/saoyisao.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/service_items_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/service_items_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/service_items_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/service_items_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/shop.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/sprite-im.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/tese.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/title.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/xb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/xb1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/yihangka.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/img/zhaodapei.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/js/jquery-3.1.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/static/js/list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/templates/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/templates/trade.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/templates/tradeFail.html" afterDir="false" />
+    <list default="true" id="0cdc3bb2-555e-4659-9f09-55b4de06dd3b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_8_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_8_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_8_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_19_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_2_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_2_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/service/PaymentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gmall-order-service/src/main/java/com/yuan/gmall/mapper/OmsOrderItemMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gmall-order-service/src/main/java/com/yuan/gmall/mapper/OmsOrderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/templates/error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gmall-payment/src/main/java/com/yuan/gmall/payment/controller/PaymentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gmall-payment/src/main/java/com/yuan/gmall/service/impl/PaymentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gmall-payment/src/main/resources/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gmall-payment/src/main/resources/static/img/CMB.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gmall-payment/src/main/resources/static/img/alipay.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gmall-payment/src/main/resources/static/img/logo1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gmall-payment/src/main/resources/static/img/title.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gmall-payment/src/main/resources/static/img/weixin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gmall-payment/src/main/resources/static/img/yihangka.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gmall-payment/src/main/resources/static/js/jquery-3.1.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gmall-payment/src/main/resources/templates/finish.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gmall-payment/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gmall-payment/src/main/resources/templates/paymentindex.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/我不上传.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/$CACHE_FILE$" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_18_0_0.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gmall-api/gmall-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-api/gmall-api.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/bean/OmsCartItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/bean/OmsCartItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/bean/OmsOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/bean/OmsOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/bean/OmsOrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/bean/OmsOrderItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/service/CartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/service/CartService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/service/SkuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/service/SkuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gmall-api/target/classes/com/yuan/gmall/service/SkuService.class" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-api/target/classes/com/yuan/gmall/service/SkuService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gmall-api/target/classes/com/yuan/gmall/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-api/target/classes/com/yuan/gmall/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gmall-cart-service/gmall-cart-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-cart-service/gmall-cart-service.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gmall-cart-service/src/main/java/com/yuan/gmall/cart/service/impl/CartServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-cart-service/src/main/java/com/yuan/gmall/cart/service/impl/CartServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/templates/cartList.html" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/templates/cartList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gmall-cart-web/gmall-cart-web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-cart-web/gmall-cart-web.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/templates/cartInner.html" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-cart-web/src/main/resources/templates/cartInner.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gmall-manage-service/src/main/java/com/yuan/gmall/manage/service/impl/SkuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-manage-service/src/main/java/com/yuan/gmall/manage/service/impl/SkuServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gmall-manage-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-manage-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gmall-order-service/gmall-order-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-order-service/gmall-order-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gmall-order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-order-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gmall-order-service/src/main/java/com/yuan/gmall/GmallOrderServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-order-service/src/main/java/com/yuan/gmall/GmallOrderServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gmall-order-service/src/main/java/com/yuan/gmall/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-order-service/src/main/java/com/yuan/gmall/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gmall-order-web/src/main/java/com/yuan/gmall/order/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-order-web/src/main/java/com/yuan/gmall/order/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gmall-order-web/src/main/resources/templates/trade.html" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-order-web/src/main/resources/templates/trade.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gmall-parent/gmall-parent.iml" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-parent/gmall-parent.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-passport-web/src/main/java/com/yuan/gmall/passport/controller/PassportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-passport-web/src/main/java/com/yuan/gmall/passport/controller/PassportController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmall-passport-web/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-passport-web/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gmall-search-web/src/main/resources/static/list/js/jquery-1.12.4.js" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-search-web/src/main/resources/static/list/js/jquery-1.12.4.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gmall-service-util/gmall-service-util.iml" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-service-util/gmall-service-util.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gmall-user-service/src/main/java/com/yuan/gmall/user/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-user-service/src/main/java/com/yuan/gmall/user/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gmall-web-util/gmall-web-util.iml" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-web-util/gmall-web-util.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gmall-web-util/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gmall-web-util/pom.xml" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/fastdfs-client-java/target/" />
-    <ignored path="$PROJECT_DIR$/gmall-api/target/" />
-    <ignored path="$PROJECT_DIR$/gmall-manage-service/target/" />
-    <ignored path="$PROJECT_DIR$/gmall-common-util/target/" />
-    <ignored path="$PROJECT_DIR$/gmall-item-web/target/" />
-    <ignored path="$PROJECT_DIR$/gmall-manage-web/target/" />
-    <ignored path="$PROJECT_DIR$/gmall-parent/target/" />
-    <ignored path="$PROJECT_DIR$/gmall-service-user/target/" />
-    <ignored path="$PROJECT_DIR$/gmall-service-util/target/" />
-    <ignored path="$PROJECT_DIR$/gmall-user-web/target/" />
-    <ignored path="$PROJECT_DIR$/gmall-user/target/" />
-    <ignored path="$PROJECT_DIR$/gmall-web-util/target/" />
-    <ignored path="$PROJECT_DIR$/../../gmall0105/fastdfs-client-java/target/" />
-    <ignored path="$PROJECT_DIR$/gmall-search-web/target/" />
-    <ignored path="$PROJECT_DIR$/gmall-search-service/target/" />
-    <ignored path="$PROJECT_DIR$/gmall-cart-web/target/" />
-    <ignored path="$PROJECT_DIR$/gmall-cart-service/target/" />
-    <ignored path="$PROJECT_DIR$/gmall-user-service/target/" />
-    <ignored path="$PROJECT_DIR$/gmall/passportweb/target/" />
-    <ignored path="$PROJECT_DIR$/gmall-parent-web/target/" />
-    <ignored path="$PROJECT_DIR$/gmall-passport-web/target/" />
-    <ignored path="$PROJECT_DIR$/../../gmall0105/gmall-user-service/target/" />
-    <ignored path="$PROJECT_DIR$/gmall-paren/target/" />
-    <ignored path="$PROJECT_DIR$/gmall-order-web/target/" />
-    <ignored path="$PROJECT_DIR$/gmall/order/service/target/" />
-    <ignored path="$PROJECT_DIR$/gmall-order-service/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CodeInsightWorkspaceSettings">
-    <option name="optimizeImportsOnTheFly" value="true" />
-  </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="myitem@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-    </expand>
-    <select />
-  </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="fastdfs-client-java" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gmall-passport-web/src/main/java/com/yuan/gmall/passport/controller/PassportController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="160" column="36" lean-forward="true" selection-start-line="160" selection-start-column="36" selection-end-line="160" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
-        <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>&lt;a href=&quot;/登录页面\index.html&quot;&gt;你好，请登录&lt;/a&gt;</find>
-      <find>submitLogin(</find>
-      <find>username</find>
-      <find>http://cart.gmall.com:8085/toTrade</find>
-      <find>toTr</find>
-      <find>getInstance</find>
-      <find>Redis</find>
-      <find>redissonClient</find>
-      <find>GmallRedissonConfig</find>
-      <find>spring.dubbo.application.name</find>
-      <find>spring.dubbo.protocol.name</find>
-      <find>com.atguigu.gmall</find>
-      <find>StringUtils</find>
-      <find>spring.datasource.url=</find>
-      <find>redisUtil;</find>
-      <find>addUser</find>
-      <find>去结算</find>
-      <find>toTrade</find>
-      <find>JwtUtil.encode</find>
-      <find>jedis.get</find>
-      <find>JSON.parseObject</find>
-      <find>ReturnUrl</find>
-      <find>originUrl</find>
-      <find>updateCart</find>
-      <find>selectCart</find>
-      <find>checkSku</find>
-      <find>Quantity</find>
-      <find>应</find>
-      <find>你好</find>
-      <find>nickName</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>com.yuangmall</replace>
-      <replace>http://search.gmall.com:8084</replace>
-      <replace>item.gmall.com:8083</replace>
-      <replace>cart.gmall.com:8085</replace>
-      <replace>gmall-user</replace>
-      <replace>passport.gmall.com</replace>
-      <replace />
-      <replace>com.yuan.gmall</replace>
-    </replaceStrings>
-    <dirStrings>
-      <dir>D:\java\item\MyItem\gmall-search-web</dir>
-      <dir>D:\java\item\MyItem\</dir>
-      <dir>D:\java\item</dir>
-      <dir>D:\java\item\MyItem\gmall-cart-web\src\main\resources</dir>
-    </dirStrings>
-  </component>
   <component name="Git.Settings">
-    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/gmall-service-user/pom.xml" />
-        <option value="$PROJECT_DIR$/gmall-cart-service/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/gmall-web-util/src/main/java/com/yuan/gmall/config/WebMvcConfiguration.java" />
-        <option value="$PROJECT_DIR$/gmall-user-service/pom.xml" />
-        <option value="$PROJECT_DIR$/gmall-user-service/src/main/java/com/atguigu/gmall/user/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/gmall-passport-web/pom.xml" />
-        <option value="$PROJECT_DIR$/gmall-passport-web/src/main/java/com/atguigu/gmall/passport/controller/PassportController.java" />
-        <option value="$PROJECT_DIR$/gmall-passport-web/src/main/java/com/atguigu/gmall/passport/GmallPassportWebApplication.java" />
-        <option value="$PROJECT_DIR$/gmall-passport-web/src/main/java/com/atguigu/gmall/passport/controller/TestOauth2.java" />
-        <option value="$PROJECT_DIR$/gmall-passport-web/src/main/java/com/yuan/gmall/passport/controller/TestOauth2.java" />
-        <option value="$PROJECT_DIR$/gmall-user-service/src/main/java/com/yuan/gmall/user/GmallServiceUserApplication.java" />
-        <option value="$PROJECT_DIR$/gmall-user-service/src/main/java/com/yuan/gmall/GmallServiceUserApplication.java" />
-        <option value="$PROJECT_DIR$/gmall-manage-service/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/gmall-user-service/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/gmall-web-util/src/main/java/com/yuan/gmall/util/JwtUtil.java" />
-        <option value="$PROJECT_DIR$/gmall-passport-web/src/main/java/com/yuan/gmall/passport/GmallPassportWebApplication.java" />
-        <option value="$PROJECT_DIR$/gmall-web-util/src/main/java/com/yuan/gmall/interceptors/AuthInterceptor.java" />
-        <option value="$PROJECT_DIR$/gmall-passport-web/src/main/java/com/yuan/gmall/passport/controller/OAuth2Test.java" />
-        <option value="$PROJECT_DIR$/gmall-manage-web/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/gmall-cart-web/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/gmall-passport-web/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/service/UserService.java" />
-        <option value="$PROJECT_DIR$/gmall-user-service/src/main/java/com/yuan/gmall/user/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/bean/UmsMember.java" />
-        <option value="$PROJECT_DIR$/我不上传.txt" />
-        <option value="$PROJECT_DIR$/gmall-order-web/src/test/java/com/yuan/gmall/GmallOrderWebApplicationTests.java" />
-        <option value="$PROJECT_DIR$/gmall-order-web/src/main/java/com/yuan/gmall/order/controller/GmallOrderWebApplication.java" />
-        <option value="$PROJECT_DIR$/gmall-order-web/src/main/java/com/yuan/gmall/order/GmallOrderWebApplication.java" />
-        <option value="$PROJECT_DIR$/gmall/order/service/pom.xml" />
-        <option value="$PROJECT_DIR$/gmall-order-service/src/main/java/com/yuan/gmall/service/GmallManageServiceApplication.java" />
-        <option value="$PROJECT_DIR$/gmall-order-service/pom.xml" />
-        <option value="$PROJECT_DIR$/gmall-order-service/src/main/java/com/yuan/gmall/service/OrderService.java" />
-        <option value="$PROJECT_DIR$/gmall-order-service/src/main/java/com/yuan/gmall/service/OrderListService.java" />
-        <option value="$PROJECT_DIR$/gmall-order-service/src/main/java/com/yuan/gmall/GmallOrderServiceApplication.java" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/gmall-order-service/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/gmall-passport-web/src/main/resources/templates/index.html" />
-        <option value="$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/service/OrderService.java" />
-        <option value="$PROJECT_DIR$/gmall-cart-service/pom.xml" />
-        <option value="$PROJECT_DIR$/gmall-order-web/pom.xml" />
-        <option value="$PROJECT_DIR$/gmall-web-util/pom.xml" />
-        <option value="$PROJECT_DIR$/gmall-order-web/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/gmall-cart-web/src/main/resources/templates/cartList.html" />
-        <option value="$PROJECT_DIR$/gmall-cart-web/src/main/java/com/yuan/gmall/cart/controller/CartController.java" />
-        <option value="$PROJECT_DIR$/gmall-order-service/src/main/java/com/yuan/gmall/service/impl/OrderServiceImpl.java" />
-        <option value="$PROJECT_DIR$/gmall-cart-service/src/main/java/com/yuan/gmall/cart/service/impl/CartServiceImpl.java" />
-        <option value="$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/bean/OmsCartItem.java" />
-        <option value="$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/bean/OmsOrderItem.java" />
-        <option value="$PROJECT_DIR$/gmall-order-web/src/main/resources/templates/trade.html" />
-        <option value="$PROJECT_DIR$/gmall-order-web/src/main/java/com/yuan/gmall/order/controller/OrderController.java" />
-        <option value="$PROJECT_DIR$/gmall-passport-web/src/main/java/com/yuan/gmall/passport/controller/PassportController.java" />
-      </list>
-    </option>
-  </component>
-  <component name="IgnoredFileRootStore">
-    <option name="generatedRoots">
-      <set>
-        <option value="D:\java\item\MyItem\.idea" />
-      </set>
-    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -341,115 +93,18 @@
         <option name="userSettingsFile" value="D:\apache-maven-3.5.2\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-        <option name="jdkForImporter" value="1.8" />
-      </MavenImportingSettings>
-    </option>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand />
-      <select />
-    </treeState>
-  </component>
-  <component name="MavenRunner">
-    <option name="jreName" value="1.8" />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="168" />
-    <option name="y" value="168" />
-    <option name="width" value="1785" />
-    <option name="height" value="975" />
-  </component>
-  <component name="ProjectId" id="1UvjHzbPY1NsnrLgY05DZo049hS" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <flattenPackages ProjectPane="false" />
-      <showMembers ProjectPane="true" />
-      <showExcludedFiles Scope="true" ProjectPane="true" />
-      <hideEmptyPackages ProjectPane="true" />
-      <abbreviatePackageNames ProjectPane="true" />
-      <autoscrollToSource ProjectPane="false" />
-      <sortByType ProjectPane="false" />
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="fastdfs-client-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyItem" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fastdfs-client-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyItem" type="462c0819:PsiDirectoryNode" />
-              <item name="gmall-passport-web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fastdfs-client-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyItem" type="462c0819:PsiDirectoryNode" />
-              <item name="gmall-passport-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fastdfs-client-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyItem" type="462c0819:PsiDirectoryNode" />
-              <item name="gmall-passport-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fastdfs-client-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyItem" type="462c0819:PsiDirectoryNode" />
-              <item name="gmall-passport-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fastdfs-client-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyItem" type="462c0819:PsiDirectoryNode" />
-              <item name="gmall-passport-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="passport" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fastdfs-client-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyItem" type="462c0819:PsiDirectoryNode" />
-              <item name="gmall-passport-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="passport" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
-  </component>
+  <component name="ProjectId" id="1YNPKnruDEadryAAkbG0XyeYRXN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
-    <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelOrder2" value="2" />
@@ -460,123 +115,29 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall" />
-    <property name="last_opened_file_path" value="D:/backups/java/gmall0105" />
+    <property name="last_opened_file_path" value="D:/backups/java/谷粒商城/day20-2019年6月19日/代码/gmall0105" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.25632185" />
-    <property name="restartRequiresConfirmation" value="false" />
+    <property name="project.structure.side.proportion" value="0.2505747" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
-    <property name="show.run.dashboard.notification" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.yuan.gmall.service" />
-      <recent name="com.yuan.gmall.service.mapper" />
-      <recent name="com.yuan.gmall.util" />
-      <recent name="com.yuan.gmall.manage.mapper" />
-      <recent name="com.yuan.gmall.manage.service" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.yuan.gmall" />
-      <recent name="com.yuan.gmall.passport" />
-      <recent name="com.yuan.gmall.user" />
-      <recent name="com.yuan.gmall.manage" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\java\item\MyItem\gmall-api\src\main\java\com\yuan\gmall\bean" />
-      <recent name="D:\java\item\MyItem\gmall-order-service\src\main\resources" />
-      <recent name="D:\java\item\MyItem\gmall-order-web\src\main\resources\static" />
-      <recent name="D:\java\item\MyItem\gmall-order-web\src\main\resources\templates" />
-      <recent name="D:\java\item\MyItem\gmall-order-web\src\main\resources" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.yuan.gmall.service" />
-      <recent name="com.yuan.gmall.util" />
-      <recent name="com.yuan.gmall.bean" />
-      <recent name="com.yuan.gmall.manage.controller" />
-      <recent name="com.yuan.gmall.manage.service.impl" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\java\item\MyItem\gmall-passport-web\src\main\java\com\yuan\gmall" />
-      <recent name="D:\java\item\MyItem\gmall-cart-web\src\main\resources\templates" />
-      <recent name="D:\java\item\MyItem\gmall-manage-service\src\main\java" />
-      <recent name="D:\java\item\MyItem\gmall-manage-service\src\main\resources" />
-      <recent name="D:\java\item\MyItem" />
+      <recent name="D:\java\item\MyItem\gmall-payment\src\main\resources" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Spring Boot.GmallOrderWebApplication">
-    <configuration name="OAuth2Test.VloginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="gmall-passport-web" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yuan.gmall.passport.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.yuan.gmall.passport.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.yuan.gmall.passport.controller.OAuth2Test" />
-      <option name="METHOD_NAME" value="VloginTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GmallCartServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="gmall-cart-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yuan.gmall.GmallCartServiceApplication" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GmallCartWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="gmall-cart-web" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yuan.gmall.GmallCartWebApplication" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GmallManageServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="gmall-manage-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yuan.gmall.GmallManageServiceApplication" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GmallManageWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="gmall-manage-web" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yuan.gmall.manage.GmallManageWebApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GmallOrderServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.GmallOrderServiceApplication">
+    <configuration name="GmallOrderServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yuan.gmall.GmallOrderServiceApplication" />
       <module name="gmall-order-service" />
       <extension name="coverage">
         <pattern>
@@ -584,7 +145,39 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yuan.gmall.GmallOrderServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GmallCartServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="gmall-cart-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yuan.gmall.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yuan.gmall.GmallCartServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GmallCartWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gmall-cart-web" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yuan.gmall.GmallCartWebApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GmallManageServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="gmall-manage-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yuan.gmall.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yuan.gmall.GmallManageServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -592,7 +185,6 @@
     <configuration name="GmallOrderWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="gmall-order-web" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.yuan.gmall.GmallOrderWebApplication" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -618,38 +210,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GmallServiceUserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="GmallServiceUserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="gmall-user-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yuan.gmall.passport.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.yuan.gmall.GmallServiceUserApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GmallServiceUserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="gmall-service-user" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yuan.gmall.GmallServiceUserApplication" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GmallUserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+    <configuration name="GmallUserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="gmall-user" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yuan.gmall.passport.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.yuan.gmall.GmallUserApplication" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -661,1182 +231,203 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ItemWebApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="gmall-item-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yuan.gmall.item.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yuan.gmall.item.ItemWebApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ItemWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="gmall-item-web" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.yuan.gmall.item.ItemWebApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaymentApplication " type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
+      <module name="payment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yuan.gmall.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yuan.gmall.PaymentApplication" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.OAuth2Test.VloginTest" />
-      <item itemvalue="Spring Boot.ItemWebApplication" />
-      <item itemvalue="Spring Boot.GmallManageServiceApplication" />
-      <item itemvalue="Spring Boot.GmallManageWebApplication" />
+      <item itemvalue="Application.GmallOrderServiceApplication" />
+      <item itemvalue="Spring Boot.GmallCartWebApplication" />
+      <item itemvalue="Spring Boot.GmallOrderWebApplication" />
+      <item itemvalue="Spring Boot.GmallPassportWebApplication" />
+      <item itemvalue="Spring Boot.GmallSearchServiceApplication" />
+      <item itemvalue="Spring Boot.GmallSearchWebApplication" />
+      <item itemvalue="Spring Boot.GmallServiceUserApplication" />
       <item itemvalue="Spring Boot.GmallUserApplication" />
       <item itemvalue="Spring Boot.GmallUserWebApplication" />
-      <item itemvalue="Spring Boot.GmallSearchWebApplication" />
-      <item itemvalue="Spring Boot.GmallSearchServiceApplication" />
-      <item itemvalue="Spring Boot.GmallPassportWebApplication" />
-      <item itemvalue="Spring Boot.GmallOrderWebApplication" />
-      <item itemvalue="Spring Boot.GmallServiceUserApplication" />
+      <item itemvalue="Spring Boot.ItemWebApplication" />
+      <item itemvalue="Spring Boot.PaymentApplication " />
       <item itemvalue="Spring Boot.GmallCartServiceApplication" />
-      <item itemvalue="Spring Boot.GmallCartWebApplication" />
-      <item itemvalue="Spring Boot.GmallOrderServiceApplication" />
+      <item itemvalue="Spring Boot.GmallManageServiceApplication" />
+      <item itemvalue="Spring Boot.ItemWebApplication (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.PaymentApplication " />
+        <item itemvalue="Application.GmallOrderServiceApplication" />
+        <item itemvalue="Spring Boot.ItemWebApplication (1)" />
+        <item itemvalue="Spring Boot.GmallManageServiceApplication" />
         <item itemvalue="Spring Boot.GmallCartServiceApplication" />
-        <item itemvalue="Spring Boot.GmallCartWebApplication" />
-        <item itemvalue="Spring Boot.GmallServiceUserApplication" />
-        <item itemvalue="Spring Boot.GmallOrderServiceApplication" />
-        <item itemvalue="JUnit.OAuth2Test.VloginTest" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
-  <component name="StructureViewFactory">
-    <option name="AUTOSCROLL_FROM_SOURCE" value="true" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="01f2ba12-2c57-45ae-947d-784b13d5534f" name="Default Changelist" comment="" />
-      <created>1576243878468</created>
+      <changelist id="0cdc3bb2-555e-4659-9f09-55b4de06dd3b" name="Default Changelist" comment="" />
+      <created>1582780018001</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1576243878468</updated>
-      <workItem from="1576243882775" duration="769000" />
-      <workItem from="1576282826966" duration="871000" />
-      <workItem from="1576283721629" duration="5686000" />
-      <workItem from="1576291864861" duration="5659000" />
-      <workItem from="1576305934866" duration="19145000" />
-      <workItem from="1576370265933" duration="1880000" />
-      <workItem from="1576372385627" duration="1965000" />
-      <workItem from="1576374392333" duration="2506000" />
-      <workItem from="1576376991948" duration="3155000" />
-      <workItem from="1576382204721" duration="91000" />
-      <workItem from="1576383239035" duration="707000" />
-      <workItem from="1576384094600" duration="1869000" />
-      <workItem from="1576385996368" duration="2128000" />
-      <workItem from="1576388163531" duration="3313000" />
-      <workItem from="1577321478427" duration="2977000" />
-      <workItem from="1577325175653" duration="660000" />
-      <workItem from="1577325866092" duration="830000" />
-      <workItem from="1577326741858" duration="29000" />
-      <workItem from="1577326798950" duration="75000" />
-      <workItem from="1577327841289" duration="1608000" />
-      <workItem from="1577329596052" duration="2333000" />
-      <workItem from="1577424743778" duration="2274000" />
-      <workItem from="1577427053098" duration="131000" />
-      <workItem from="1577428437902" duration="1735000" />
-      <workItem from="1577430237148" duration="2829000" />
-      <workItem from="1577433129029" duration="512000" />
-      <workItem from="1577433655018" duration="21000" />
-      <workItem from="1577433710480" duration="105000" />
-      <workItem from="1577433822172" duration="256000" />
-      <workItem from="1577434084688" duration="243000" />
-      <workItem from="1577434363309" duration="226000" />
-      <workItem from="1577434627783" duration="526000" />
-      <workItem from="1577435165249" duration="4599000" />
-      <workItem from="1577500629266" duration="17132000" />
-      <workItem from="1577528410655" duration="609000" />
-      <workItem from="1577529101175" duration="748000" />
-      <workItem from="1577530054431" duration="2392000" />
-      <workItem from="1577532744779" duration="1416000" />
-      <workItem from="1577534202121" duration="2016000" />
-      <workItem from="1577536661952" duration="2040000" />
-      <workItem from="1577578424684" duration="700000" />
-      <workItem from="1577580163148" duration="10353000" />
-      <workItem from="1577594822800" duration="697000" />
-      <workItem from="1577597794471" duration="4238000" />
-      <workItem from="1577617657772" duration="207000" />
-      <workItem from="1577617997347" duration="513000" />
-      <workItem from="1577618738983" duration="27000" />
-      <workItem from="1577620164049" duration="306000" />
-      <workItem from="1577621383657" duration="1515000" />
-      <workItem from="1577667869926" duration="5832000" />
-      <workItem from="1577695447761" duration="122000" />
-      <workItem from="1577756373558" duration="1155000" />
-      <workItem from="1577757781858" duration="3034000" />
-      <workItem from="1578101659586" duration="227000" />
-      <workItem from="1578101937960" duration="10000" />
-      <workItem from="1578102105848" duration="501000" />
-      <workItem from="1578103379243" duration="48000" />
-      <workItem from="1578107289522" duration="669000" />
-      <workItem from="1578108586062" duration="86000" />
-      <workItem from="1578108705492" duration="3110000" />
-      <workItem from="1578113391879" duration="12610000" />
-      <workItem from="1578132059326" duration="6878000" />
-      <workItem from="1578186382839" duration="6251000" />
-      <workItem from="1578193022253" duration="10450000" />
-      <workItem from="1578208113984" duration="859000" />
-      <workItem from="1578209048618" duration="7606000" />
-      <workItem from="1578273033910" duration="4460000" />
-      <workItem from="1578299284532" duration="2320000" />
-      <workItem from="1578303870054" duration="306000" />
-      <workItem from="1578304825160" duration="70000" />
-      <workItem from="1578305054746" duration="28000" />
-      <workItem from="1578305245289" duration="438000" />
-      <workItem from="1578385333374" duration="7801000" />
-      <workItem from="1578447723754" duration="3493000" />
-      <workItem from="1578451246378" duration="3363000" />
-      <workItem from="1578544794276" duration="145000" />
-      <workItem from="1578544999191" duration="442000" />
-      <workItem from="1578545629075" duration="113000" />
-      <workItem from="1578546459426" duration="1385000" />
-      <workItem from="1578575482010" duration="257000" />
-      <workItem from="1578618547677" duration="3624000" />
-      <workItem from="1578622217944" duration="548000" />
-      <workItem from="1578623001240" duration="380000" />
-      <workItem from="1578629201439" duration="396000" />
-      <workItem from="1578630061696" duration="23000" />
-      <workItem from="1578630130197" duration="1220000" />
-      <workItem from="1578631402346" duration="9009000" />
-      <workItem from="1578640711638" duration="515000" />
-      <workItem from="1578642557310" duration="440000" />
-      <workItem from="1578643050812" duration="1962000" />
-      <workItem from="1578645351838" duration="1606000" />
-      <workItem from="1578648874195" duration="28000" />
-      <workItem from="1578648940166" duration="890000" />
-      <workItem from="1578704240336" duration="3581000" />
-      <workItem from="1578737106748" duration="2247000" />
-      <workItem from="1578739413668" duration="10144000" />
-      <workItem from="1578792723157" duration="11065000" />
-      <workItem from="1578829733766" duration="597000" />
-      <workItem from="1579052013359" duration="798000" />
-      <workItem from="1579054185149" duration="1062000" />
-      <workItem from="1579055630118" duration="5443000" />
-      <workItem from="1579086200674" duration="799000" />
-      <workItem from="1579182901840" duration="3208000" />
-      <workItem from="1579243215201" duration="10826000" />
-      <workItem from="1579307927248" duration="4432000" />
-      <workItem from="1579312494017" duration="9865000" />
-      <workItem from="1579352792821" duration="1288000" />
-      <workItem from="1579358697752" duration="924000" />
-      <workItem from="1579396486560" duration="8427000" />
-      <workItem from="1579488423132" duration="10573000" />
-      <workItem from="1579528938011" duration="4002000" />
-      <workItem from="1579569642421" duration="14452000" />
-      <workItem from="1579683353739" duration="1862000" />
-      <workItem from="1579697642047" duration="18490000" />
-      <workItem from="1579826225832" duration="9048000" />
-      <workItem from="1579847800718" duration="2252000" />
-      <workItem from="1579851208655" duration="8980000" />
-      <workItem from="1579862611817" duration="208000" />
-      <workItem from="1579911806024" duration="6369000" />
-      <workItem from="1580003179217" duration="5523000" />
-      <workItem from="1580011613408" duration="2932000" />
-      <workItem from="1580015343608" duration="267000" />
-      <workItem from="1580015646799" duration="1855000" />
-      <workItem from="1580017574068" duration="1881000" />
-      <workItem from="1580020943517" duration="2165000" />
-      <workItem from="1580023316938" duration="1226000" />
-      <workItem from="1580024637988" duration="2480000" />
-      <workItem from="1580027820249" duration="597000" />
-      <workItem from="1580034004826" duration="3839000" />
-      <workItem from="1580039212953" duration="1501000" />
-      <workItem from="1580048455337" duration="3698000" />
-      <workItem from="1580086574237" duration="10157000" />
-      <workItem from="1580119891838" duration="5487000" />
-      <workItem from="1580177845145" duration="597000" />
-      <workItem from="1580270394203" duration="12242000" />
-      <workItem from="1580308893497" duration="521000" />
-      <workItem from="1580347154959" duration="1963000" />
-      <workItem from="1580349183005" duration="2490000" />
-      <workItem from="1580351749918" duration="6647000" />
-      <workItem from="1580358607479" duration="801000" />
-      <workItem from="1580359459921" duration="136000" />
-      <workItem from="1580361058248" duration="423000" />
-      <workItem from="1580361543330" duration="1013000" />
-      <workItem from="1580362726239" duration="159000" />
-      <workItem from="1580362938819" duration="201000" />
-      <workItem from="1580363254919" duration="192000" />
-      <workItem from="1580363493397" duration="243000" />
-      <workItem from="1580363883094" duration="759000" />
-      <workItem from="1580364706370" duration="194000" />
-      <workItem from="1580364955306" duration="381000" />
-      <workItem from="1580365396170" duration="9781000" />
-      <workItem from="1580379563701" duration="613000" />
-      <workItem from="1580440633022" duration="1024000" />
+      <updated>1582780018001</updated>
+      <workItem from="1582780023574" duration="1865000" />
+      <workItem from="1582781983913" duration="3953000" />
+      <workItem from="1582785979802" duration="2980000" />
+      <workItem from="1582854362848" duration="66000" />
     </task>
-    <task id="LOCAL-00001" summary="test">
-      <created>1576244087731</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1576244087731</updated>
-    </task>
-    <task id="LOCAL-00002" summary="test">
-      <created>1576244483748</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1576244483748</updated>
-    </task>
-    <task id="LOCAL-00003" summary="test">
-      <created>1576329360434</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1576329360434</updated>
-    </task>
-    <task id="LOCAL-00004" summary="test">
-      <created>1576329451404</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1576329451404</updated>
-    </task>
-    <task id="LOCAL-00005" summary="整合前准备">
-      <created>1576386069978</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1576386069984</updated>
-    </task>
-    <task id="LOCAL-00006" summary="整合前准备">
-      <created>1578302213611</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1578302213611</updated>
-    </task>
-    <task id="LOCAL-00007" summary="后台完成">
-      <created>1578305385790</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1578305385790</updated>
-    </task>
-    <task id="LOCAL-00008" summary="jedis">
-      <created>1578799540049</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1578799540049</updated>
-    </task>
-    <task id="LOCAL-00009" summary="jedis">
-      <created>1578799572838</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1578799572838</updated>
-    </task>
-    <task id="LOCAL-00010" summary="搜索框完成">
-      <created>1579258591463</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1579258591464</updated>
-    </task>
-    <task id="LOCAL-00011" summary="登陆完成">
-      <created>1580102456776</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1580102456776</updated>
-    </task>
-    <task id="LOCAL-00012" summary="社交账号登陆完成">
-      <created>1580291861012</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1580291861012</updated>
-    </task>
-    <task id="LOCAL-00013" summary="社交账号登陆完成">
-      <created>1580292133707</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1580292133707</updated>
-    </task>
-    <option name="localTasksCounter" value="14" />
     <servers />
-  </component>
-  <component name="TestHistory">
-    <history-entry file="OAuth2Test_VloginTest - 2020.01.27 at 23h 33m 55s.xml">
-      <configuration name="OAuth2Test.VloginTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OAuth2Test_VloginTest - 2020.01.27 at 23h 40m 02s.xml">
-      <configuration name="OAuth2Test.VloginTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OAuth2Test_VloginTest - 2020.01.27 at 23h 40m 15s.xml">
-      <configuration name="OAuth2Test.VloginTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OAuth2Test_VloginTest - 2020.01.27 at 23h 42m 20s.xml">
-      <configuration name="OAuth2Test.VloginTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OAuth2Test_VloginTest - 2020.01.27 at 23h 42m 59s.xml">
-      <configuration name="OAuth2Test.VloginTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OAuth2Test_VloginTest - 2020.01.27 at 23h 45m 11s.xml">
-      <configuration name="OAuth2Test.VloginTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OAuth2Test_VloginTest - 2020.01.27 at 23h 45m 40s.xml">
-      <configuration name="OAuth2Test.VloginTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OAuth2Test_VloginTest - 2020.01.27 at 23h 47m 19s.xml">
-      <configuration name="OAuth2Test.VloginTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OAuth2Test_VloginTest - 2020.01.27 at 23h 48m 41s.xml">
-      <configuration name="OAuth2Test.VloginTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OAuth2Test_VloginTest - 2020.01.27 at 23h 49m 37s.xml">
-      <configuration name="OAuth2Test.VloginTest" configurationId="JUnit" />
-    </history-entry>
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="251019000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="704" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4965035" visible="true" weight="0.21584478" />
-      <window_info id="Structure" order="1" sideWeight="0.5034965" side_tool="true" weight="0.24009702" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" sideWeight="0.50174826" side_tool="true" weight="0.26596606" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32832617" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.57832617" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.9291045" weight="0.42918456" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32939914" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32867134" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.35407725" />
-      <window_info anchor="bottom" id="Database Changes" order="11" weight="0.32832617" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32867134" />
-      <window_info anchor="bottom" id="Version Control" order="13" weight="0.3290461" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.3197425" />
-      <window_info anchor="bottom" id="Thumbnails" order="15" weight="0.32939914" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.13326226" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" weight="0.32983023" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Bean Validation" order="9" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49825174" visible="true" weight="0.24009702" />
-      <window_info id="Structure" order="1" sideWeight="0.50174826" side_tool="true" weight="0.23686337" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" sideWeight="0.50174826" side_tool="true" weight="0.26596606" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32832617" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.57867134" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.9291045" weight="0.41083917" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32939914" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32867134" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.35407725" />
-      <window_info anchor="bottom" id="Database Changes" order="11" weight="0.32832617" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32867134" />
-      <window_info anchor="bottom" id="Version Control" order="13" weight="0.3290461" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.32517484" />
-      <window_info anchor="bottom" id="Thumbnails" order="15" weight="0.32939914" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.13338722" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" weight="0.32983023" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Bean Validation" order="9" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="test" />
-    <MESSAGE value="整合前准备" />
-    <MESSAGE value="后台完成" />
-    <MESSAGE value="jedis" />
-    <MESSAGE value="搜索框完成" />
-    <MESSAGE value="登陆完成" />
-    <MESSAGE value="社交账号登陆完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="社交账号登陆完成" />
-  </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="183" key="#Inspections" timestamp="1576315715529">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="552" y="183" key="#Inspections/0.0.1920.1050@0.0.1920.1050" timestamp="1576315715529" />
-    <state x="552" y="183" key="#Notifications" timestamp="1576329500633">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="552" y="183" key="#Notifications/0.0.1920.1050@0.0.1920.1050" timestamp="1576329500633" />
-    <state x="233" y="3" key="#Project_Structure" timestamp="1578293723751">
+    <state x="277" y="0" width="741" height="689" key="#ItemWebApplication" timestamp="1582787364282">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="233" y="3" key="#Project_Structure/0.0.1280.689@0.0.1280.689" timestamp="1578293723751" />
-    <state x="350" y="5" key="#Project_Structure/0.0.1920.1050@0.0.1920.1050" timestamp="1577439022922" />
-    <state x="182" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578294900697">
+    <state x="277" y="0" width="741" height="689" key="#ItemWebApplication/0.0.1280.689@0.0.1280.689" timestamp="1582787364282" />
+    <state x="233" y="3" key="#Project_Structure" timestamp="1582782622446">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="182" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.689@0.0.1280.689" timestamp="1578294900697" />
-    <state x="446" y="54" key="#com.intellij.ide.util.MemberChooser" timestamp="1578621489071">
+    <state x="233" y="3" key="#Project_Structure/0.0.1280.689@0.0.1280.689" timestamp="1582782622446" />
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582782697657">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="446" y="54" key="#com.intellij.ide.util.MemberChooser/0.0.1280.689@0.0.1280.689" timestamp="1578621489071" />
-    <state x="669" y="82" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1578388352597" />
-    <state x="457" y="126" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1576384551912">
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.689@0.0.1280.689" timestamp="1582782697657" />
+    <state x="446" y="54" key="#com.intellij.ide.util.MemberChooser" timestamp="1582786820561">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="457" y="126" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1280.689@0.0.1280.689" timestamp="1576384551912" />
-    <state x="375" y="411" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1577435846983">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="250" y="270" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1280.689@0.0.1280.689" timestamp="1577426046938" />
-    <state x="375" y="411" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1577435846983" />
-    <state x="425" y="203" width="431" height="293" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1576286562530">
+    <state x="446" y="54" key="#com.intellij.ide.util.MemberChooser/0.0.1280.689@0.0.1280.689" timestamp="1582786820561" />
+    <state x="378" y="128" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1582787363654">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="425" y="203" width="431" height="293" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.689@0.0.1280.689" timestamp="1576286562530" />
-    <state x="371" y="91" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1578452499358">
+    <state x="378" y="128" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1280.689@0.0.1280.689" timestamp="1582787363654" />
+    <state x="371" y="91" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1582784734751">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="371" y="91" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.689@0.0.1280.689" timestamp="1578452499358" />
-    <state x="557" y="139" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1577694914636" />
-    <state x="352" y="186" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1578620962237">
+    <state x="371" y="91" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.689@0.0.1280.689" timestamp="1582784734751" />
+    <state x="421" y="34" key="FileChooserDialogImpl" timestamp="1582788253110">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="352" y="186" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.689@0.0.1280.689" timestamp="1578620962237" />
-    <state x="311" y="69" width="1150" height="823" key="CommitChangelistDialog2" timestamp="1578305384129">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="373" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1576386067704" />
-    <state x="311" y="69" width="1150" height="823" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1578305384129" />
-    <state width="483" height="466" key="DebuggerActiveHint" timestamp="1578452426459">
+    <state x="421" y="34" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1582788253110" />
+    <state width="1237" height="145" key="GridCell.Tab.0.bottom" timestamp="1582799006755">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="483" height="466" key="DebuggerActiveHint/0.0.1280.689@0.0.1280.689" timestamp="1578452426459" />
-    <state width="499" height="711" key="DebuggerActiveHint/0.0.1920.1050@0.0.1920.1050" timestamp="1578390660413" />
-    <state x="421" y="70" key="FileChooserDialogImpl" timestamp="1578545741533">
+    <state width="1237" height="145" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1582799006755" />
+    <state width="1237" height="145" key="GridCell.Tab.0.center" timestamp="1582799006754">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="421" y="70" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1578545741533" />
-    <state x="612" y="395" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1578386569759" />
-    <state x="465" y="241" width="391" height="222" key="Github.CreateGistDialog" timestamp="1578451157871">
+    <state width="1237" height="145" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1582799006754" />
+    <state width="1237" height="145" key="GridCell.Tab.0.left" timestamp="1582799006754">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="465" y="241" width="391" height="222" key="Github.CreateGistDialog/0.0.1280.689@0.0.1280.689" timestamp="1578451157871" />
-    <state x="698" y="367" width="382" height="174" key="Github.CreateGistDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1578305076746" />
-    <state x="378" y="312" key="Github.Dialog.Accounts.Choose" timestamp="1576386112771">
+    <state width="1237" height="145" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1582799006754" />
+    <state width="1237" height="145" key="GridCell.Tab.0.right" timestamp="1582799006755">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="378" y="312" key="Github.Dialog.Accounts.Choose/0.0.1280.689@0.0.1280.689" timestamp="1576386112771" />
-    <state width="1237" height="229" key="GridCell.Tab.0.bottom" timestamp="1578622446348">
+    <state width="1237" height="145" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1582799006755" />
+    <state width="1237" height="145" key="GridCell.Tab.1.bottom" timestamp="1582799006755">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1237" height="229" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1578622446348" />
-    <state width="1237" height="184" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1578488843134" />
-    <state width="1237" height="229" key="GridCell.Tab.0.center" timestamp="1578622446348">
+    <state width="1237" height="145" key="GridCell.Tab.1.bottom/0.0.1280.689@0.0.1280.689" timestamp="1582799006755" />
+    <state width="1237" height="145" key="GridCell.Tab.1.center" timestamp="1582799006755">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1237" height="229" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1578622446348" />
-    <state width="1237" height="184" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1578488843133" />
-    <state width="1237" height="229" key="GridCell.Tab.0.left" timestamp="1578622446347">
+    <state width="1237" height="145" key="GridCell.Tab.1.center/0.0.1280.689@0.0.1280.689" timestamp="1582799006755" />
+    <state width="1237" height="145" key="GridCell.Tab.1.left" timestamp="1582799006755">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1237" height="229" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1578622446347" />
-    <state width="1237" height="184" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1578488843133" />
-    <state width="1237" height="229" key="GridCell.Tab.0.right" timestamp="1578622446348">
+    <state width="1237" height="145" key="GridCell.Tab.1.left/0.0.1280.689@0.0.1280.689" timestamp="1582799006755" />
+    <state width="1237" height="145" key="GridCell.Tab.1.right" timestamp="1582799006755">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1237" height="229" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1578622446348" />
-    <state width="1237" height="184" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1578488843134" />
-    <state width="1237" height="229" key="GridCell.Tab.1.bottom" timestamp="1578622469788">
+    <state width="1237" height="145" key="GridCell.Tab.1.right/0.0.1280.689@0.0.1280.689" timestamp="1582799006755" />
+    <state width="1237" height="145" key="GridCell.Tab.2.bottom" timestamp="1582799005515">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1237" height="229" key="GridCell.Tab.1.bottom/0.0.1280.689@0.0.1280.689" timestamp="1578622469788" />
-    <state width="1237" height="184" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1578488843134" />
-    <state width="1237" height="229" key="GridCell.Tab.1.center" timestamp="1578622469788">
+    <state width="1237" height="145" key="GridCell.Tab.2.bottom/0.0.1280.689@0.0.1280.689" timestamp="1582799005515" />
+    <state width="1237" height="145" key="GridCell.Tab.2.center" timestamp="1582799005515">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1237" height="229" key="GridCell.Tab.1.center/0.0.1280.689@0.0.1280.689" timestamp="1578622469788" />
-    <state width="1237" height="184" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1578488843134" />
-    <state width="1237" height="229" key="GridCell.Tab.1.left" timestamp="1578622469788">
+    <state width="1237" height="145" key="GridCell.Tab.2.center/0.0.1280.689@0.0.1280.689" timestamp="1582799005515" />
+    <state width="1237" height="145" key="GridCell.Tab.2.left" timestamp="1582799005514">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1237" height="229" key="GridCell.Tab.1.left/0.0.1280.689@0.0.1280.689" timestamp="1578622469788" />
-    <state width="1237" height="184" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1578488843134" />
-    <state width="1237" height="229" key="GridCell.Tab.1.right" timestamp="1578622469788">
+    <state width="1237" height="145" key="GridCell.Tab.2.left/0.0.1280.689@0.0.1280.689" timestamp="1582799005514" />
+    <state width="1237" height="145" key="GridCell.Tab.2.right" timestamp="1582799005515">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1237" height="229" key="GridCell.Tab.1.right/0.0.1280.689@0.0.1280.689" timestamp="1578622469788" />
-    <state width="1237" height="184" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1578488843134" />
-    <state width="1237" height="229" key="GridCell.Tab.2.bottom" timestamp="1578622446186">
+    <state width="1237" height="145" key="GridCell.Tab.2.right/0.0.1280.689@0.0.1280.689" timestamp="1582799005515" />
+    <state x="287" y="42" key="NewModule_or_Project.wizard" timestamp="1582780314633">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1237" height="229" key="GridCell.Tab.2.bottom/0.0.1280.689@0.0.1280.689" timestamp="1578622446186" />
-    <state width="1237" height="184" key="GridCell.Tab.2.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1578488843134" />
-    <state width="1237" height="229" key="GridCell.Tab.2.center" timestamp="1578622446185">
+    <state x="287" y="42" key="NewModule_or_Project.wizard/0.0.1280.689@0.0.1280.689" timestamp="1582780314633" />
+    <state x="72" y="0" key="SettingsEditor" timestamp="1582854430023">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1237" height="229" key="GridCell.Tab.2.center/0.0.1280.689@0.0.1280.689" timestamp="1578622446185" />
-    <state width="1237" height="184" key="GridCell.Tab.2.center/0.0.1920.1050@0.0.1920.1050" timestamp="1578488843134" />
-    <state width="1237" height="229" key="GridCell.Tab.2.left" timestamp="1578622446185">
+    <state x="72" y="0" key="SettingsEditor/0.0.1280.689@0.0.1280.689" timestamp="1582854430023" />
+    <state x="348" y="238" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1582780135039">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1237" height="229" key="GridCell.Tab.2.left/0.0.1280.689@0.0.1280.689" timestamp="1578622446185" />
-    <state width="1237" height="184" key="GridCell.Tab.2.left/0.0.1920.1050@0.0.1920.1050" timestamp="1578488843134" />
-    <state width="1237" height="229" key="GridCell.Tab.2.right" timestamp="1578622446185">
+    <state x="348" y="238" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1280.689@0.0.1280.689" timestamp="1582780135039" />
+    <state x="254" y="45" width="773" height="600" key="find.popup" timestamp="1582787611955">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1237" height="229" key="GridCell.Tab.2.right/0.0.1280.689@0.0.1280.689" timestamp="1578622446185" />
-    <state width="1237" height="184" key="GridCell.Tab.2.right/0.0.1920.1050@0.0.1920.1050" timestamp="1578488843134" />
-    <state width="1877" height="377" key="GridCell.Tab.3.bottom" timestamp="1577533622024">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="377" key="GridCell.Tab.3.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1577533622024" />
-    <state width="1877" height="377" key="GridCell.Tab.3.center" timestamp="1577533622024">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="377" key="GridCell.Tab.3.center/0.0.1920.1050@0.0.1920.1050" timestamp="1577533622024" />
-    <state width="1877" height="377" key="GridCell.Tab.3.left" timestamp="1577533622024">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="377" key="GridCell.Tab.3.left/0.0.1920.1050@0.0.1920.1050" timestamp="1577533622024" />
-    <state width="1877" height="377" key="GridCell.Tab.3.right" timestamp="1577533622024">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="377" key="GridCell.Tab.3.right/0.0.1920.1050@0.0.1920.1050" timestamp="1577533622024" />
-    <state width="1877" height="377" key="GridCell.Tab.4.bottom" timestamp="1577533622024">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="377" key="GridCell.Tab.4.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1577533622024" />
-    <state width="1877" height="377" key="GridCell.Tab.4.center" timestamp="1577533622024">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="377" key="GridCell.Tab.4.center/0.0.1920.1050@0.0.1920.1050" timestamp="1577533622024" />
-    <state width="1877" height="377" key="GridCell.Tab.4.left" timestamp="1577533622024">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="377" key="GridCell.Tab.4.left/0.0.1920.1050@0.0.1920.1050" timestamp="1577533622024" />
-    <state width="1877" height="377" key="GridCell.Tab.4.right" timestamp="1577533622024">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="377" key="GridCell.Tab.4.right/0.0.1920.1050@0.0.1920.1050" timestamp="1577533622024" />
-    <state x="171" y="0" key="Maven.ArtifactSearchDialog" timestamp="1577426737833">
+    <state x="254" y="45" width="773" height="600" key="find.popup/0.0.1280.689@0.0.1280.689" timestamp="1582787611955" />
+    <state x="297" y="153" key="run.anything.popup" timestamp="1582783817190">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="171" y="0" key="Maven.ArtifactSearchDialog/0.0.1280.689@0.0.1280.689" timestamp="1577426737833" />
-    <state x="496" y="85" key="NewModule_or_Project.wizard" timestamp="1578108753597">
-      <screen x="0" y="0" width="1280" height="689" />
-    </state>
-    <state x="496" y="85" key="NewModule_or_Project.wizard/0.0.1280.689@0.0.1280.689" timestamp="1578108753597" />
-    <state x="744" y="287" key="NewModule_or_Project.wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1577436914774" />
-    <state x="141" y="0" key="SettingsEditor" timestamp="1578623273337">
-      <screen x="0" y="0" width="1280" height="689" />
-    </state>
-    <state x="141" y="0" key="SettingsEditor/0.0.1280.689@0.0.1280.689" timestamp="1578623273337" />
-    <state x="584" y="164" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1578305359613" />
-    <state width="556" height="446" key="SwitcherDM" timestamp="1576300732922">
-      <screen x="0" y="0" width="1280" height="689" />
-    </state>
-    <state width="556" height="446" key="SwitcherDM/0.0.1280.689@0.0.1280.689" timestamp="1576300732922" />
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1578305389143">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="259" y="57" key="Vcs.Push.Dialog.v2/0.0.1280.689@0.0.1280.689" timestamp="1576386347485" />
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1578305389143" />
-    <state x="439" y="122" key="chooseDestDirectoryDialog" timestamp="1577512864547">
-      <screen x="0" y="0" width="1280" height="689" />
-    </state>
-    <state x="439" y="122" key="chooseDestDirectoryDialog/0.0.1280.689@0.0.1280.689" timestamp="1577512864547" />
-    <state x="476" y="16" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1576291909265">
-      <screen x="0" y="0" width="1280" height="689" />
-    </state>
-    <state x="476" y="16" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1280.689@0.0.1280.689" timestamp="1576291909265" />
-    <state x="329" y="169" key="com.intellij.ide.util.TipDialog" timestamp="1578623009929">
-      <screen x="0" y="0" width="1280" height="689" />
-    </state>
-    <state x="329" y="169" key="com.intellij.ide.util.TipDialog/0.0.1280.689@0.0.1280.689" timestamp="1578623009929" />
-    <state x="99" y="99" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1577672525665">
-      <screen x="0" y="0" width="1280" height="689" />
-    </state>
-    <state x="99" y="99" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1280.689@0.0.1280.689" timestamp="1577672525665" />
-    <state x="450" y="260" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1050@0.0.1920.1050" timestamp="1577622306287" />
-    <state x="56" y="79" key="new project wizard" timestamp="1578545441556">
-      <screen x="0" y="0" width="1280" height="689" />
-    </state>
-    <state x="56" y="79" key="new project wizard/0.0.1280.689@0.0.1280.689" timestamp="1578545441556" />
-    <state x="386" y="210" key="new project wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1578304072538" />
-    <state x="702" y="152" key="refactoring.ChangeSignatureDialog" timestamp="1578388312047">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="702" y="152" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1578388312047" />
-    <state x="297" y="153" width="672" height="677" key="run.anything.popup" timestamp="1578453815754">
-      <screen x="0" y="0" width="1280" height="689" />
-    </state>
-    <state x="297" y="153" width="672" height="677" key="run.anything.popup/0.0.1280.689@0.0.1280.689" timestamp="1578453815754" />
-    <state x="446" y="233" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1578385416451" />
-    <state x="415" y="149" width="672" height="445" key="search.everywhere.popup" timestamp="1578620184561">
-      <screen x="0" y="0" width="1280" height="689" />
-    </state>
-    <state x="415" y="149" width="672" height="445" key="search.everywhere.popup/0.0.1280.689@0.0.1280.689" timestamp="1578620184561" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1578385828134" />
+    <state x="297" y="153" key="run.anything.popup/0.0.1280.689@0.0.1280.689" timestamp="1582783817190" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint type="java-method">
-          <url>file://$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/service/CatalogService.java</url>
-          <line>10</line>
-          <properties class="com.yuan.gmall.service.CatalogService" method="getCatalog1" />
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/gmall-order-service/src/main/java/com/yuan/gmall/service/impl/OrderServiceImpl.java</url>
-          <line>22</line>
-          <properties class="com.yuan.gmall.service.impl.OrderServiceImpl" method="cartList">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="201" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/gmall-user-service/src/main/java/com/yuan/gmall/user/service/impl/UserServiceImpl.java</url>
-          <line>132</line>
-          <properties />
-          <option name="timeStamp" value="171" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/gmall-cart-web/src/main/java/com/yuan/gmall/cart/controller/CartController.java</url>
-          <line>45</line>
-          <properties />
-          <option name="timeStamp" value="175" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/gmall-passport-web/src/main/java/com/yuan/gmall/passport/controller/PassportController.java</url>
-          <line>173</line>
-          <properties />
-          <option name="timeStamp" value="180" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/gmall-cart-web/src/main/java/com/yuan/gmall/cart/controller/CartController.java</url>
-          <line>97</line>
-          <properties />
-          <option name="timeStamp" value="196" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/gmall-cart-service/src/main/java/com/yuan/gmall/cart/service/impl/CartServiceImpl.java</url>
-          <line>57</line>
-          <properties />
-          <option name="timeStamp" value="200" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/gmall-order-service/src/main/java/com/yuan/gmall/service/impl/OrderServiceImpl.java</url>
-          <line>26</line>
-          <properties />
-          <option name="timeStamp" value="202" />
+          <url>file://$PROJECT_DIR$/gmall-payment/src/main/java/com/yuan/gmall/payment/controller/PaymentController.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/gmall-order-web/src/main/java/com/yuan/gmall/order/controller/OrderController.java</url>
-          <line>60</line>
-          <properties />
-          <option name="timeStamp" value="203" />
+          <line>143</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/gmall-order-web/src/main/java/com/yuan/gmall/order/controller/OrderController.java</url>
+          <line>133</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="SpringBootApplicationConfigurationType">
-        <watch expression="pmsProductInfo.spuSaleAttrList" />
-        <watch expression="pmsProductInfo.spuSaleAttrList" language="JAVA" />
-        <watch expression="pmsSkuInfo.skuImageList" />
-      </configuration>
-    </watches-manager>
-  </component>
-  <component name="antWorkspaceConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gmall-passport-web/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="32" column="23" lean-forward="true" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-order-web/src/main/resources/static/css/JD2.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-passport-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.40/tomcat-embed-core-8.5.40.jar!/javax/servlet/http/HttpServlet.class" />
-    <entry file="file://$PROJECT_DIR$/gmall-passport-web/src/main/java/com/yuan/gmall/passport/GmallPassportWebApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.24.RELEASE/spring-webmvc-4.3.24.RELEASE.jar!/org/springframework/web/servlet/HandlerExecutionChain.class" />
-    <entry file="file://$PROJECT_DIR$/gmall/order/service/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/gmall-manage-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/service/CatalogService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-order-service/src/main/java/com/yuan/gmall/service/OrderService.java" />
-    <entry file="file://$PROJECT_DIR$/gmall-search-service/src/main/java/com/yuan/gmall/search/service/impl/SearchServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-406">
-          <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="416">
-            <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-passport-web/src/main/java/com/yuan/gmall/passport/controller/OAuth2Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="58" column="34" selection-start-line="58" selection-start-column="34" selection-end-line="58" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-order-service/src/main/java/com/yuan/gmall/GmallOrderServiceApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-passport-web/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="88" column="19" lean-forward="true" selection-start-line="88" selection-start-column="19" selection-end-line="88" selection-end-column="19" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/service/OrderService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-order-service/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-order-web/src/main/java/com/yuan/gmall/GmallOrderWebApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-order-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-cart-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="24" column="12" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="26" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-web-util/src/main/java/com/yuan/gmall/annotations/LoginRequired.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-parent/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2520" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-order-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="30" column="43" lean-forward="true" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-user-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="37" column="20" lean-forward="true" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-web-util/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1344">
-          <caret line="64" column="10" selection-start-line="64" selection-start-column="10" selection-end-line="64" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-user-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-order-web/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-user-service/src/main/java/com/yuan/gmall/GmallServiceUserApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-cart-web/src/main/resources/templates/cartList.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="163" column="29" lean-forward="true" selection-start-line="163" selection-start-column="29" selection-end-line="163" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/dubbo/2.6.0/dubbo-2.6.0.jar!/com/alibaba/dubbo/rpc/proxy/AbstractProxyInvoker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-cart-web/src/main/java/com/yuan/gmall/cart/controller/CartController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="110" selection-start-line="110" selection-end-line="110" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/dubbo/2.6.0/dubbo-2.6.0.jar!/com/alibaba/dubbo/rpc/proxy/javassist/JavassistProxyFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-manage-service/src/main/java/com/yuan/gmall/manage/service/impl/AttrServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-manage-service/src/main/java/com/yuan/gmall/manage/service/impl/CatalogServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-manage-service/src/main/java/com/yuan/gmall/manage/service/impl/SkuServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2639">
-          <caret line="145" column="27" lean-forward="true" selection-start-line="145" selection-start-column="27" selection-end-line="145" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-manage-service/src/main/java/com/yuan/gmall/manage/service/impl/SpuListServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-84">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/bean/OmsOrder.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-order-service/src/main/java/com/yuan/gmall/service/impl/OrderServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/service/CartService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/bean/OmsCartItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
-          <folding>
-            <element signature="e#1951#1952#0" expanded="true" />
-            <element signature="e#1982#1983#0" expanded="true" />
-            <element signature="e#2034#2035#0" expanded="true" />
-            <element signature="e#2074#2075#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.24.RELEASE/spring-web-4.3.24.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="117" selection-start-line="117" selection-end-line="117" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.24.RELEASE/spring-webmvc-4.3.24.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="399" selection-start-line="399" selection-end-line="399" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-web-util/src/main/java/com/yuan/gmall/util/JwtUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-order-web/src/main/java/com/yuan/gmall/order/controller/OrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="987">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-web-util/src/main/java/com/yuan/gmall/interceptors/AuthInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1449">
-          <caret line="81" column="55" selection-start-line="81" selection-start-column="45" selection-end-line="81" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-api/src/main/java/com/yuan/gmall/bean/OmsOrderItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-order-web/src/main/resources/templates/trade.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-cart-service/src/main/java/com/yuan/gmall/cart/service/impl/CartServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1554">
-          <caret line="88" column="68" selection-start-line="88" selection-start-column="68" selection-end-line="88" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-user-service/src/main/java/com/yuan/gmall/user/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="86" column="24" lean-forward="true" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gmall-passport-web/src/main/java/com/yuan/gmall/passport/controller/PassportController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="160" column="36" lean-forward="true" selection-start-line="160" selection-start-column="36" selection-end-line="160" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.25632185" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>Spring</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.25632185" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.25632185" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.25632185" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>gmall-common-util</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.25632185" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: ch.qos.logback:logback-classic:1.1.11</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.25632185" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

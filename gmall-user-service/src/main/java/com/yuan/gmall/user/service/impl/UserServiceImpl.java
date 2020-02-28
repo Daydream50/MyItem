@@ -141,4 +141,23 @@ public class UserServiceImpl implements UserService {
         userMapper.insertSelective(umsMember);
 
     }
+
+    @Override
+    public List<UmsMemberReceiveAddress> selectAddress(String memberId) {
+
+        UmsMemberReceiveAddress address = new UmsMemberReceiveAddress();
+        address.setMemberId(memberId);
+
+        return  umsMemberReceiveAddressMapper.select(address);
+    }
+
+    @Override
+    public UmsMemberReceiveAddress getReceiveAddressById(String receiveAddressId) {
+        UmsMemberReceiveAddress umsMemberReceiveAddress = new UmsMemberReceiveAddress();
+        umsMemberReceiveAddress.setId(receiveAddressId);
+        UmsMemberReceiveAddress umsMemberReceiveAddress1 = umsMemberReceiveAddressMapper.selectOne(umsMemberReceiveAddress);
+        return umsMemberReceiveAddress1;
+    }
+
+
 }

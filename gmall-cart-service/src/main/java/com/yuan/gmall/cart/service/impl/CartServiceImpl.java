@@ -3,18 +3,15 @@ package com.yuan.gmall.cart.service.impl;
 import com.alibaba.dubbo.config.annotation.Service;
 import com.alibaba.fastjson.JSON;
 import com.yuan.gmall.bean.OmsCartItem;
-import com.yuan.gmall.service.CartService;
 import com.yuan.gmall.cart.service.mapper.CartItemMapper;
+import com.yuan.gmall.service.CartService;
 import com.yuan.gmall.util.RedisUtil;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import redis.clients.jedis.Jedis;
 import tk.mybatis.mapper.entity.Example;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 @Service
 public class CartServiceImpl implements CartService {
@@ -68,6 +65,7 @@ public class CartServiceImpl implements CartService {
 
     /**
      * 同步缓存
+     *
      * @param mangerId
      */
     @Override
@@ -86,10 +84,10 @@ public class CartServiceImpl implements CartService {
 
             Map<String, String> map = new HashMap<>();
             for (OmsCartItem cartItem : omsCartItems) {
-                cartItem.setTotalPrice(cartItem.getPrice().multiply(cartItem.getQuantity()));
+                cartItem.setTotalPrice(cartItem.getPrice().multiply(cartItem.getQuantity()));  //算好总价格
                 map.put(cartItem.getProductSkuId(), JSON.toJSONString(cartItem));
             }
-            if(map != null) {
+            if (map != null) {
                 //先删在加
                 jedis.del("user:" + mangerId + ":cart");
                 jedis.hmset("user:" + mangerId + ":cart", map);
@@ -111,11 +109,11 @@ public class CartServiceImpl implements CartService {
         OmsCartItem omsCartItem = new OmsCartItem();
         List<String> hvals = new ArrayList<>();
 
-        //查询缓存
+
         Jedis jedis = redisUtil.getJedis();
 
         try {
-
+            //查询缓存
             hvals = jedis.hvals("user:" + mangerId + ":cart");
 
             if (hvals != null && !hvals.isEmpty()) {
@@ -136,15 +134,42 @@ public class CartServiceImpl implements CartService {
                 }
             }
 
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
             return null;
-        }finally {
+        } finally {
             jedis.close();
         }
 
         return omsCartItemList;
 
+    }
+
+    @Override
+    public void delCart(String mangerId) {
+        Jedis jedis = null;
+        List<String> hvals = new ArrayList<>();
+        try {
+            jedis = redisUtil.getJedis();
+            String cartKey = "user:" + mangerId + ":cart";
+            //查询缓存
+            hvals = jedis.hvals(cartKey);
+            if (hvals != null && !hvals.isEmpty()) {
+                //删除缓存
+                jedis.del(cartKey);
+                //删除数据库
+                OmsCartItem omsCartItem = new OmsCartItem();
+                omsCartItem.setMemberId(mangerId);
+                cartItemMapper.delete(omsCartItem);
+            } else {
+                new Throwable("删除缓存失败");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+
+        }finally {
+            jedis.close();
+        }
     }
 
 }

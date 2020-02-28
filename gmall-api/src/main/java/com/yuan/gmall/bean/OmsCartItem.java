@@ -8,6 +8,7 @@ import java.util.Date;
 
 public class OmsCartItem implements Serializable{
 
+
     @Id
     private String id;
     private String productId;
@@ -31,27 +32,11 @@ public class OmsCartItem implements Serializable{
     private String productBrand;
     private String productSn;
     private String productAttr;
-
     private String isChecked;
 
     @Transient
     private BigDecimal totalPrice;
 
-    public BigDecimal getTotalPrice() {
-        return totalPrice;
-    }
-
-    public void setTotalPrice(BigDecimal totalPrice) {
-        this.totalPrice = totalPrice;
-    }
-
-    public String getIsChecked() {
-        return isChecked;
-    }
-
-    public void setIsChecked(String isChecked) {
-        this.isChecked = isChecked;
-    }
 
     public String getId() {
         return id;
@@ -219,5 +204,21 @@ public class OmsCartItem implements Serializable{
 
     public void setProductAttr(String productAttr) {
         this.productAttr = productAttr;
+    }
+
+    public String getIsChecked() {
+        return isChecked;
+    }
+
+    public void setIsChecked(String isChecked) {
+        this.isChecked = isChecked;
+    }
+
+    public BigDecimal getTotalPrice() {
+        return totalPrice;
+    }
+
+    public void setTotalPrice(BigDecimal totalPrice) {
+        this.totalPrice = totalPrice;
     }
 }

@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MyItem.iml" filepath="$PROJECT_DIR$/MyItem.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Test/Test.iml" filepath="$PROJECT_DIR$/Test/Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/MyItem.iml" filepath="$PROJECT_DIR$/.idea/MyItem.iml" />
       <module fileurl="file://$PROJECT_DIR$/fastdfs-client-java/fastdfs-client-java.iml" filepath="$PROJECT_DIR$/fastdfs-client-java/fastdfs-client-java.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../gmall0105/fastdfs-client-java/fastdfs-client-java (1).iml" filepath="$PROJECT_DIR$/../../gmall0105/fastdfs-client-java/fastdfs-client-java (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/gmall-api/gmall-api.iml" filepath="$PROJECT_DIR$/gmall-api/gmall-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/gmall-cart-service/gmall-cart-service.iml" filepath="$PROJECT_DIR$/gmall-cart-service/gmall-cart-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/gmall-cart-web/gmall-cart-web.iml" filepath="$PROJECT_DIR$/gmall-cart-web/gmall-cart-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/gmall-common-util/gmall-common-util.iml" filepath="$PROJECT_DIR$/gmall-common-util/gmall-common-util.iml" />
-      <module fileurl="file://$PROJECT_DIR$/gmall-item-web/gmall-item-web.iml" filepath="$PROJECT_DIR$/gmall-item-web/gmall-item-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gmall-item-web/item-web.iml" filepath="$PROJECT_DIR$/gmall-item-web/item-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/gmall-manage-service/gmall-manage-service.iml" filepath="$PROJECT_DIR$/gmall-manage-service/gmall-manage-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/gmall-manage-web/gmall-manage-web.iml" filepath="$PROJECT_DIR$/gmall-manage-web/gmall-manage-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/gmall-order-service/gmall-order-service.iml" filepath="$PROJECT_DIR$/gmall-order-service/gmall-order-service.iml" />
@@ -24,8 +22,7 @@
       <module fileurl="file://$PROJECT_DIR$/gmall-user-service/gmall-user-service.iml" filepath="$PROJECT_DIR$/gmall-user-service/gmall-user-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/gmall-user-web/gmall-user-web.iml" filepath="$PROJECT_DIR$/gmall-user-web/gmall-user-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/gmall-web-util/gmall-web-util.iml" filepath="$PROJECT_DIR$/gmall-web-util/gmall-web-util.iml" />
-      <module fileurl="file://$PROJECT_DIR$/item-web.iml" filepath="$PROJECT_DIR$/item-web.iml" />
-      <module fileurl="file://$PROJECT_DIR$/gmall/passportweb/passportweb.iml" filepath="$PROJECT_DIR$/gmall/passportweb/passportweb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gmall-payment/payment.iml" filepath="$PROJECT_DIR$/gmall-payment/payment.iml" />
     </modules>
   </component>
 </project>
